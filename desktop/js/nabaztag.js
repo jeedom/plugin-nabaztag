@@ -50,14 +50,31 @@ function addCmdToTable(_cmd) {
         var _cmd = {configuration: {}};
     }
     var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
+    //STEVOH : Ajout de l'icone
     tr += '<td class="name">';
     tr += '<input class="cmdAttr form-control input-sm" data-l1key="id" style="display : none;">';
-    tr += '<input class="cmdAttr form-control input-sm" data-l1key="name"></td>';
+    tr += '<div class="row">';
+    tr += '<div class="col-lg-12">';
+    tr += '<a class="cmdAction btn btn-default btn-sm" data-l1key="chooseIcon"><i class="fa fa-flag"></i> Icone</a>';
+    tr += '<span class="cmdAttr" data-l1key="display" data-l2key="icon" style="margin-left : 10px;"></span>';
+    tr += '</div>';
+    tr += '<div class="col-lg-12">';
+    tr += '<input class="cmdAttr form-control input-sm" data-l1key="name">';
+    tr += '</div>';
+    tr += '</div></td>';
+
     tr += '<td class="type" type="' + init(_cmd.type) + '">' + jeedom.cmd.availableType();
     tr += '<span class="subType" subType="' + init(_cmd.subType) + '"></span></td>';
     tr += '<td ><input class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="request" style="margin-top : 5px;" />';
     tr += '<textarea class="cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="parameters" style="margin-top : 5px;" placeholder="{{Parametres (JSON)}}" ></textarea>';
     tr += '<a class="btn btn-default listCmdNabaztag form-control input-sm" style="margin-top : 5px;"><i class="fa fa-list-alt cursor"></i> {{Ajouter une commande prédéfinie}}</a>';
+    tr += '</td>';
+    tr += '<td>';
+    //STEVOH : Ajout de l'option afficher
+    tr += '<span><input type="checkbox" class="cmdAttr" data-l1key="isVisible" checked/> {{Afficher}}<br/></span>';
+    //STEVOH : Ajout des informations minValue et maxValue pour les sliders
+    tr += '<input class="tooltips cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="minValue" placeholder="{{Min}}" title="{{Min}}"> ';
+    tr += '<input class="tooltips cmdAttr form-control input-sm" data-l1key="configuration" data-l2key="maxValue" placeholder="{{Max}}" title="{{Max}}">';
     tr += '</td>';
     tr += '<td>';
     if (is_numeric(_cmd.id)) {

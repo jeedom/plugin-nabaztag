@@ -30,7 +30,7 @@ class nabaztag extends eqLogic {
 
     public function preUpdate() {
         if ($this->getConfiguration('mac') == '') {
-            throw new Exception(__('L\adresse MAC ne peut etre vide',__FILE__));
+            throw new Exception(__('L\'adresse MAC ne peut etre vide',__FILE__));
         }
         if ($this->getConfiguration('token') == '') {
             throw new Exception(__('Le token ne peut etre vide',__FILE__));
@@ -61,6 +61,9 @@ class nabaztagCmd extends cmd {
     	
 		$nabaztag = $this->getEqLogic();
         $requestHeader = 'http://' . $nabaztag->getConfiguration('addr') . '/ojn/FR/api.jsp?sn=' . $nabaztag->getConfiguration('mac') . '&token=' . $nabaztag->getConfiguration('token');
+        
+        //STEVOH : Définition de l'url pour le streaming
+        $streamrequestHeader = 'http://' . $nabaztag->getConfiguration('addr') . '/ojn/FR/api_stream.jsp?sn=' . $nabaztag->getConfiguration('mac') . '&token=' . $nabaztag->getConfiguration('token');
 
         if ($this->getConfiguration('parameters') == '') {
             throw new Exception(__("Pas de paramètre défini"));
@@ -82,24 +85,43 @@ class nabaztagCmd extends cmd {
                         break;
                 }
             }
+            
 
-        //$request = $requestHeader.'&'.http_build_query(array($type=>$parameters));
-		$request = $requestHeader.'&'.$type.'='.$parameters;
-		//throw new Exception(__('aa'.$request));
+		//STEVOH : Construction de la requête
+        if ($type == 'urlList') {
+        	$parameters = urlencode($parameters);
+        	$request = $streamrequestHeader.'&'.$type.'='.$parameters;
+        }
+        else{
+        	$request = $requestHeader.'&'.$type.'='.$parameters;
+        }
+
 		$ch = curl_init();
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
         curl_setopt($ch, CURLOPT_URL, $request);
-        curl_setopt($ch, CURLOPT_TIMEOUT, 1);
+        //STEVOH : modification du timeout à 2 pour éviter les erreurs Curl
+        curl_setopt($ch, CURLOPT_TIMEOUT, 2);
         $response = curl_exec($ch);
         if ($response === false) {
             log::add('nabaztag', 'Error', __('Erreur curl : ',__FILE__) . curl_error($ch) . __(' sur la commande Nabaztag ',__FILE__) . $this->name);
             throw new Exception(__('[nabaztag] Erreur curl : ',__FILE__) . curl_error($ch) . __(' sur la commande Nabaztag ',__FILE__) . $this->name);
         }
         curl_close($ch);
+        
+        //STEVOH : Traitement de la réponse pour le test de connection
+        if ($this->type == 'info') {
+            	if($this->subType == "binary"){
+            		if($response == "<?xml version=\"1.0\" encoding=\"UTF-8\"?><rsp><rabbitConnected>YES</rabbitConnected></rsp>"){
+            			return true;
+            		}else{
+            			return false;
+            		}
+            	}
+        }
         return $response;
     }
 
     /*     * **********************Getteur Setteur*************************** */
-}
+   }
 }
 ?>

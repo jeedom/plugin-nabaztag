@@ -61,11 +61,11 @@ sendVarToJS('eqType', 'nabaztag');
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-lg-2 control-label" >{{Activer}}</label>
+                    <label class="col-lg-4 control-label" >{{Activer}}</label>
                     <div class="col-lg-1">
                         <input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" checked/>
                     </div>
-                    <label class="col-lg-2 control-label" >{{Visible}}</label>
+                    <label class="col-lg-1 control-label" >{{Visible}}</label>
                     <div class="col-lg-1">
                         <input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked/>
                     </div>
@@ -83,7 +83,7 @@ sendVarToJS('eqType', 'nabaztag');
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-lg-2 control-label">{{Token}}</label>
+                    <label class="col-lg-2 control-label">{{Token d'API Violet}}</label>
                     <div class="col-lg-3">
                         <input type="password" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="token" placeholder="{{Token}}"/>
                     </div>
@@ -103,7 +103,9 @@ sendVarToJS('eqType', 'nabaztag');
                 <tr>
                     <th style="width: 200px;">{{Nom}}</th>
                     <th style="width: 100px;">{{Type}}</th>
-                    <th>{{Parametre(s)}}</th>
+                    <th>{{Paramètre(s)}}</th>
+                    <!-- STEVOH : Ajout de la colonne Options => Contient la checkBox Afficher et minValue - maxValue pour les sliders -->
+                    <th style="width: 100px;">{{Options}}</th>
                     <th style="width: 100px;"></th>
                 </tr>
             </thead>

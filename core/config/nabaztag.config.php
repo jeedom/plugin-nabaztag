@@ -19,6 +19,78 @@
 global $listCmdNabaztag;
 $listCmdNabaztag = array(
     array(
+        'name' => 'Version',
+        'configuration' => array(
+            'request' => 'action',
+            'parameters' => '8',
+        ),
+        'type' => 'info',
+        'subType' => 'string',
+        'description' => 'Version du nabaztag',
+        'version' => '0.1',
+        'required' => '',
+    ),
+    array(
+        'name' => 'Nom',
+        'configuration' => array(
+            'request' => 'action',
+            'parameters' => '10',
+        ),
+        'type' => 'info',
+        'subType' => 'string',
+        'description' => 'Nom du nabaztag',
+        'version' => '0.1',
+        'required' => '',
+    ),
+    array(
+        'name' => 'Connecté',
+        'configuration' => array(
+            'request' => 'action',
+            'parameters' => '15',
+        ),
+        'type' => 'info',
+        'subType' => 'binary',
+        'description' => 'Nabaztag connecté au serveur?',
+        'version' => '0.1',
+        'required' => '',
+    ),
+    array(
+        'name' => 'Dernière apparition',
+        'configuration' => array(
+            'request' => 'action',
+            'parameters' => '16',
+        ),
+        'type' => 'info',
+        'subType' => 'string',
+        'description' => 'Date de dernière appartition sur le serveur',
+        'version' => '0.1',
+        'required' => '',
+    ),
+    array(
+        'name' => 'Reboot',
+        'configuration' => array(
+            'request' => 'action',
+            'parameters' => '18',
+        ),
+        'type' => 'action',
+        'subType' => 'other',
+        'description' => 'Redémarrer le Nabaztag',
+        'version' => '0.1',
+        'required' => '',
+    ),
+    array(
+        'name' => 'Streaming',
+        'configuration' => array(
+            'request' => 'urlList',
+            'parameters' => '',
+        ),
+        'type' => 'action',
+        'subType' => 'other',
+        'description' => 'Envoi de son au lapin. <br/> Il faut préciser en paramètre l\'url du son à jouer : http://monServeur/monfichier.mp3 <br/> Il est possible d\'envoyer plusieurs sons en les séparant par \'|\' : http://monServeur/monfichier1.mp3|http://monServeur/monfichier2.mp3 ',
+        'version' => '0.1',
+        'required' => '',
+    ),
+    array(
         'name' => 'Coucher',
         'configuration' => array(
             'request' => 'action',
@@ -52,18 +124,20 @@ $listCmdNabaztag = array(
         'subType' => 'message',
         'description' => 'Fait parler le Nabaztag',
         'version' => '0.1',
-        'required' => '',
+        'required' => 'Activer auparavant le plugin dans la console OpenJabNab:</br> => Plugin TTS, envoi de texte au lapin',
     ),
     array(
         'name' => 'Oreille Gauche',
         'configuration' => array(
             'request' => 'posleft',
             'parameters' => '#slider#',
+            'minValue' => '0',
+            'maxValue' => '16',
         ),
         'type' => 'action',
         'subType' => 'slider',
         'description' => 'Change la position de l\'oreille gauche',
-        'version' => '0.1',
+        'version' => '0.2',
         'required' => '',
     ),
     array(
@@ -71,11 +145,13 @@ $listCmdNabaztag = array(
         'configuration' => array(
             'request' => 'posright',
             'parameters' => '#slider#',
+            'minValue' => '0',
+            'maxValue' => '16',
         ),
         'type' => 'action',
         'subType' => 'slider',
         'description' => 'Change la position de l\'oreille droite',
-        'version' => '0.1',
+        'version' => '0.2',
         'required' => '',
     ),
     array(
@@ -88,7 +164,7 @@ $listCmdNabaztag = array(
         'subType' => 'other',
         'description' => 'Qualité de l\'air',
         'version' => '0.1',
-        'required' => '',
+        'required' => 'Activer auparavant le plugin dans la console OpenJabNab:</br> => Qualité de l\'air',
     ),
     array(
         'name' => 'Horloge parlante',
@@ -100,7 +176,7 @@ $listCmdNabaztag = array(
         'subType' => 'other',
         'description' => 'Horloge parlante',
         'version' => '0.1',
-        'required' => '',
+        'required' => 'Activer auparavant le plugin dans la console OpenJabNab:</br> => Horloge',
     ),
     array(
         'name' => 'Ephéméride',
@@ -112,7 +188,7 @@ $listCmdNabaztag = array(
         'subType' => 'other',
         'description' => 'Ephéméride',
         'version' => '0.1',
-        'required' => '',
+        'required' => 'Activer auparavant le plugin dans la console OpenJabNab:</br> => Ephéméride',
     ),
     array(
         'name' => 'Météo',
@@ -124,7 +200,19 @@ $listCmdNabaztag = array(
         'subType' => 'other',
         'description' => 'Météo',
         'version' => '0.1',
-        'required' => '',
+        'required' => 'Activer auparavant le plugin dans la console OpenJabNab:</br> => Conditions météo et prévisions',
+    ),
+    array(
+        'name' => 'Dicton',
+        'configuration' => array(
+            'request' => 'plugin',
+            'parameters' => 'dicton&function=get',
+        ),
+        'type' => 'action',
+        'subType' => 'other',
+        'description' => 'Dicton',
+        'version' => '0.1',
+        'required' => 'Activer auparavant le plugin dans la console OpenJabNab:</br> => Dicton',
     ),
 );
 ?>
