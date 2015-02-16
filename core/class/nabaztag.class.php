@@ -100,7 +100,7 @@ class nabaztagCmd extends cmd {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
         curl_setopt($ch, CURLOPT_URL, $request);
         //STEVOH : modification du timeout à 2 pour éviter les erreurs Curl
-        curl_setopt($ch, CURLOPT_TIMEOUT, 2);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
         $response = curl_exec($ch);
         if ($response === false) {
             log::add('nabaztag', 'Error', __('Erreur curl : ',__FILE__) . curl_error($ch) . __(' sur la commande Nabaztag ',__FILE__) . $this->name);
