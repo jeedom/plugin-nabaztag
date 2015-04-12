@@ -1,0 +1,13 @@
+== nabaztag
+
+=== Description
+Plugin pour commander le Nabaztag. 
+image:../images/nabaztag_screenshot1.png[]
+
+'''
+=== Configuration
+include::configuration.asciidoc[]
+
+'''
+=== Changelog
+include::changelog.asciidoc[]

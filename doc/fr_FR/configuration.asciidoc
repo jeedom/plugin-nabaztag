@@ -1,0 +1,9 @@
+. Configuration du plugin :
+
+Afin d'utiliser le plugin, vous devez effectuer quelques réglages.
+
+.. Adresse : openjabnab.fr ou l'adresse IP de votre serveur openjabnab
+.. Adresse MAC : l'adresse du lapin
+.. Token d'API Violet : Le token est disponible sur le site openjabnab
+
+image:../images/nabaztag1.png[]

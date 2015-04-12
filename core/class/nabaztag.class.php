@@ -95,12 +95,11 @@ class nabaztagCmd extends cmd {
         else{
         	$request = $requestHeader.'&'.$type.'='.$parameters;
         }
-
+		log::add('nabaztag', 'Debug','commande : ' . $request);
 		$ch = curl_init();
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
         curl_setopt($ch, CURLOPT_URL, $request);
-        //STEVOH : modification du timeout à 2 pour éviter les erreurs Curl
-        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 15);
         $response = curl_exec($ch);
         if ($response === false) {
             log::add('nabaztag', 'Error', __('Erreur curl : ',__FILE__) . curl_error($ch) . __(' sur la commande Nabaztag ',__FILE__) . $this->name);
@@ -111,10 +110,11 @@ class nabaztagCmd extends cmd {
         //STEVOH : Traitement de la réponse pour le test de connection
         if ($this->type == 'info') {
             	if($this->subType == "binary"){
-            		if($response == "<?xml version=\"1.0\" encoding=\"UTF-8\"?><rsp><rabbitConnected>YES</rabbitConnected></rsp>"){
-            			return true;
-            		}else{
+            		//if($response == '<?xml version="1.0" encoding="UTF-8"<rsp><rabbitConnected>YES</rabbitConnected></rsp>'){
+            		if(strpos($response, "<rabbitConnected>YES</rabbitConnected>") === FALSE){
             			return false;
+            		}else{
+            			return true;
             		}
             	}
         }
