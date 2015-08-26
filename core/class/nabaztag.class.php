@@ -26,6 +26,10 @@ class nabaztag extends eqLogic {
 
 	/*     * *********************Methode d'instance************************* */
 
+	public function preInsert() {
+		$this->setConfiguration('addr', 'openjabnab.fr');
+	}
+
 	public function preUpdate() {
 		if ($this->getConfiguration('mac') == '') {
 			throw new Exception(__('L\'adresse MAC ne peut etre vide', __FILE__));
