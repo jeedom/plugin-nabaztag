@@ -54,4 +54,4 @@ Il semble avoir un soucis avec la fonction parle et openjabnab, le lapin ne semb
 
 == Recupèrer l'adresse max et le token 
 
-Allez sur le site link::http://openjabnab.fr/ojn_admin/index.php[openjabnab]
+Allez sur le site link::http://openjabnab.fr/ojn_admin/index.php[openjabnab] 
