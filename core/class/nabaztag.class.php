@@ -247,6 +247,7 @@ class nabaztagCmd extends cmd {
 		} else {
 			$request = 'http://' . $nabaztag->getConfiguration('addr') . '/ojn/FR/api.jsp?sn=' . $nabaztag->getConfiguration('mac') . '&token=' . $nabaztag->getConfiguration('token') . '&' . $type . '=' . $parameters;
 		}
+		log::add('nabaztag', 'debug', $request);
 		$request = new com_http($request);
 		$request->exec();
 	}

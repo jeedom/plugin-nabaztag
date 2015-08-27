@@ -1,9 +1,57 @@
-. Configuration du plugin :
+== Configuration des équipements
 
-Afin d'utiliser le plugin, vous devez effectuer quelques réglages.
-
-.. Adresse : openjabnab.fr ou l'adresse IP de votre serveur openjabnab
-.. Adresse MAC : l'adresse du lapin
-.. Token d'API Violet : Le token est disponible sur le site openjabnab
+Une fois le plugin installé et activé à partir du Market, on accède à la page du plugin Nabaztag par : 
 
 image:../images/nabaztag1.png[]
+
+Vous retrouvez ici tous vos équipements Nabaztag : 
+
+image:../images/nabaztag2.png[]
+
+[TIP]
+Comme à beaucoup d'endroit sur Jeedom, placer la souris tout à gauche permet de faire apparaître un menu d'accès rapide (vous pouvez à partir de votre profil le laisser toujours visible).
+
+Une fois un équipement sélectionné vous obtenez : 
+
+image:../images/nabaztag3.png[]
+
+Vous retrouvez ici toute la configuration de votre équipement :
+
+* *Nom de l'équipement Nabaztag* : nom de votre équipement Nabaztag
+* *Objet parent* : indique l'objet parent auquel appartient l'équipement
+
+
+* *Catégorie* : les catégories de l'équipement (il peut appartenir à plusieurs catégories)
+* *Activer* : permet de rendre votre équipement actif
+* *Visible* : le rend visible sur le dashboard
+* *Adresse (openjabnab.fr ou @IP)* : adresse openjabnab ou IP (DNS) de votre openjabnab si vous l'autohebergez
+* *Adresse MAC* : adresse mac de votre lapin (voir plus bas)
+* *Token d'API Violet* : token de l'api (voir plus bas)
+
+En dessous vous retrouvez la liste des commandes : 
+
+* le nom affiché sur le dashboard
+* afficher : permet d'afficher la donnée sur le dashboard
+* configuration avancée (petites roues crantées) : permet d'afficher la configuration avancée de la commande (méthode d'historisation, widget...)
+* Tester : permet de tester la commande
+
+La liste des commandes est la suivante : 
+
+* *Debout* : Permet de reveiller le lapin
+* *Redemarrer* : Permet de redemarrer le lapin
+* *Coucher* : Permet de dire au lapin d'aller se coucher
+* *Qualité de lair* : Donne la qualité de l'air (necessite l'activation du plugin correspondant dans openjabnab)
+* *Ephéméride* : Donne les ephéméride (necessite l'activation du plugin correspondant dans openjabnab)
+* *Horloge parlante* : Donne l'heure (necessite l'activation du plugin correspondant dans openjabnab)
+* *Météo* : Donne la météo (necessite l'activation du plugin correspondant dans openjabnab)
+* *Dicton* : Donne un dicton (necessite l'activation du plugin correspondant dans openjabnab)
+* *Oreille gauche* : Permet de choisir la position de l'oreille gauche (16 positions possible)
+* *Oreille droite* : Permet de choisir la position de l'oreille droite (16 positions possible)
+* *Parle* : Permet de faire dire une phrase au lapin
+
+[NOTE]
+Il semble avoir un soucis avec la fonction parle et openjabnab, le lapin ne semble plus pouvoir dire des phrases qu'il n'a jamais dit
+
+== Recupèrer l'adresse max et le token 
+
+Allez sur le site link::http://openjabnab.fr/ojn_admin/index.php[openjabnab]
