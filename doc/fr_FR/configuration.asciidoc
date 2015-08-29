@@ -49,9 +49,6 @@ La liste des commandes est la suivante :
 * *Oreille droite* : Permet de choisir la position de l'oreille droite (16 positions possible)
 * *Parle* : Permet de faire dire une phrase au lapin
 
-[NOTE]
-Il semble avoir un soucis avec la fonction parle et openjabnab, le lapin ne semble plus pouvoir dire des phrases qu'il n'a jamais dit
-
 == Recupèrer l'adresse max et le token 
 
 Allez sur le site link:http://openjabnab.fr/ojn_admin/index.php[openjabnab] puis connectez vous à votre compte : 
