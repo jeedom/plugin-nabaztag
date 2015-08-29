@@ -214,6 +214,38 @@ class nabaztag extends eqLogic {
 		$proverbe->save();
 	}
 
+	public function toHtml($_version = 'dashboard') {
+		if ($this->getIsEnable() != 1) {
+			return '';
+		}
+		if (!$this->hasRight('r')) {
+			return '';
+		}
+		$_version = jeedom::versionAlias($_version);
+		$background = $this->getBackgroundColor($_version);
+		$replace = array(
+			'#name#' => $this->getName(),
+			'#id#' => $this->getId(),
+			'#background_color#' => $background,
+			'#eqLink#' => $this->getLinkToConfiguration(),
+			'#state#' => $state,
+			'#actionstate#' => $action,
+		);
+		foreach ($this->getCmd('action') as $cmd) {
+			$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
+		}
+
+		$parameters = $this->getDisplay('parameters');
+		if (is_array($parameters)) {
+			foreach ($parameters as $key => $value) {
+				$replace['#' . $key . '#'] = $value;
+			}
+		}
+
+		$html = template_replace($replace, getTemplate('core', $_version, 'nabaztag', 'nabaztag'));
+		return $html;
+	}
+
 }
 
 class nabaztagCmd extends cmd {
@@ -249,7 +281,12 @@ class nabaztagCmd extends cmd {
 		}
 		log::add('nabaztag', 'debug', $request);
 		$request = new com_http($request);
-		$request->exec();
+		$result = $request->exec();
+		$xml = new SimpleXMLElement($result);
+		$json = json_decode(json_encode($xml), TRUE);
+		if (isset($json['message']) && ($json['message'] == 'PREMIUM_ONLY' || $json['message'] == 'PLUGINNOTAVAILABLE')) {
+			throw new Exception($json['message'] . ' : ' . $json['comment']);
+		}
 	}
 
 	/*     * **********************Getteur Setteur*************************** */
