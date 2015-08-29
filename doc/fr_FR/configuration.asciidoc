@@ -54,4 +54,16 @@ Il semble avoir un soucis avec la fonction parle et openjabnab, le lapin ne semb
 
 == Recupèrer l'adresse max et le token 
 
-Allez sur le site link::http://openjabnab.fr/ojn_admin/index.php[openjabnab] 
+Allez sur le site link:http://openjabnab.fr/ojn_admin/index.php[openjabnab] puis connectez vous à votre compte : 
+
+image:../images/nabaztag4.png[]
+
+Cliquez sur lapin : 
+
+image:../images/nabaztag5.png[]
+
+Puis cliquez sur API : 
+
+image:../images/nabaztag6.png[]
+
+Ici ativez l'api violet et public et recuperez l'addresse mac ainsi que la clef  api violet pour la mettre dans la configuration de votre lapin sur Jeedom
