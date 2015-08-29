@@ -228,8 +228,6 @@ class nabaztag extends eqLogic {
 			'#id#' => $this->getId(),
 			'#background_color#' => $background,
 			'#eqLink#' => $this->getLinkToConfiguration(),
-			'#state#' => $state,
-			'#actionstate#' => $action,
 		);
 		foreach ($this->getCmd('action') as $cmd) {
 			$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
