@@ -2,7 +2,6 @@
 
 Une fois le plugin installé et activé à partir du Market, on accède à la page du plugin Nabaztag par : 
 
-image:../images/nabaztag1.png[]
 
 Vous retrouvez ici tous vos équipements Nabaztag : 
 
@@ -64,3 +63,9 @@ Puis cliquez sur API :
 image:../images/nabaztag6.png[]
 
 Ici ativez l'api violet et public et recuperez l'addresse mac ainsi que la clef  api violet pour la mettre dans la configuration de votre lapin sur Jeedom
+
+== Widget
+
+Voici le widget obtenu après création de l'équipement : 
+
+image:../images/nabaztag7.png[]
