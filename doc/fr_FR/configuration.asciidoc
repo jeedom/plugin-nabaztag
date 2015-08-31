@@ -2,6 +2,7 @@
 
 Une fois le plugin installé et activé à partir du Market, on accède à la page du plugin Nabaztag par : 
 
+image:../images/nabaztag1.png[]
 
 Vous retrouvez ici tous vos équipements Nabaztag : 
 
