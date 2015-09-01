@@ -230,7 +230,11 @@ class nabaztag extends eqLogic {
 			'#eqLink#' => $this->getLinkToConfiguration(),
 		);
 		foreach ($this->getCmd('action') as $cmd) {
-			$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
+			if ($cmd->getIsVisible() == 1) {
+				$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
+			} else {
+				$replace['#' . $cmd->getLogicalId() . '_id#'] = '';
+			}
 		}
 
 		$parameters = $this->getDisplay('parameters');
