@@ -54,7 +54,6 @@ class nabaztag extends eqLogic {
 		$reboot->setConfiguration('parameters', '18');
 		$reboot->setType('action');
 		$reboot->setSubType('other');
-		$reboot->setOrder(1);
 		$reboot->setEqLogic_id($this->getId());
 		$reboot->save();
 
@@ -69,7 +68,6 @@ class nabaztag extends eqLogic {
 		$sleep->setConfiguration('parameters', '14');
 		$sleep->setType('action');
 		$sleep->setSubType('other');
-		$sleep->setOrder(2);
 		$sleep->setEqLogic_id($this->getId());
 		$sleep->save();
 
@@ -84,7 +82,6 @@ class nabaztag extends eqLogic {
 		$wakeup->setConfiguration('parameters', '13');
 		$wakeup->setType('action');
 		$wakeup->setSubType('other');
-		$wakeup->setOrder(3);
 		$wakeup->setEqLogic_id($this->getId());
 		$wakeup->save();
 
@@ -100,7 +97,6 @@ class nabaztag extends eqLogic {
 		$speak->setType('action');
 		$speak->setSubType('message');
 		$speak->setDisplay('title_disable', 1);
-		$speak->setOrder(12);
 		$speak->setEqLogic_id($this->getId());
 		$speak->save();
 
@@ -117,7 +113,6 @@ class nabaztag extends eqLogic {
 		$leftear->setConfiguration('parameters', '#slider#');
 		$leftear->setType('action');
 		$leftear->setSubType('slider');
-		$leftear->setOrder(10);
 		$leftear->setEqLogic_id($this->getId());
 		$leftear->save();
 
@@ -134,7 +129,6 @@ class nabaztag extends eqLogic {
 		$rightear->setConfiguration('request', 'posright');
 		$rightear->setType('action');
 		$rightear->setSubType('slider');
-		$rightear->setOrder(11);
 		$rightear->setEqLogic_id($this->getId());
 		$rightear->save();
 
@@ -149,7 +143,6 @@ class nabaztag extends eqLogic {
 		$airquality->setConfiguration('parameters', 'airquality&function=get');
 		$airquality->setType('action');
 		$airquality->setSubType('other');
-		$airquality->setOrder(4);
 		$airquality->setEqLogic_id($this->getId());
 		$airquality->save();
 
@@ -164,7 +157,6 @@ class nabaztag extends eqLogic {
 		$ephemeris->setConfiguration('parameters', 'ephemeride&function=get');
 		$ephemeris->setType('action');
 		$ephemeris->setSubType('other');
-		$ephemeris->setOrder(5);
 		$ephemeris->setEqLogic_id($this->getId());
 		$ephemeris->save();
 
@@ -179,7 +171,6 @@ class nabaztag extends eqLogic {
 		$sayhour->setConfiguration('parameters', 'clock&function=get');
 		$sayhour->setType('action');
 		$sayhour->setSubType('other');
-		$sayhour->setOrder(6);
 		$sayhour->setEqLogic_id($this->getId());
 		$sayhour->save();
 
@@ -194,7 +185,6 @@ class nabaztag extends eqLogic {
 		$weather->setConfiguration('parameters', 'weather&function=get');
 		$weather->setType('action');
 		$weather->setSubType('other');
-		$weather->setOrder(7);
 		$weather->setEqLogic_id($this->getId());
 		$weather->save();
 
@@ -209,7 +199,6 @@ class nabaztag extends eqLogic {
 		$proverbe->setConfiguration('parameters', 'dicton&function=get');
 		$proverbe->setType('action');
 		$proverbe->setSubType('other');
-		$proverbe->setOrder(8);
 		$proverbe->setEqLogic_id($this->getId());
 		$proverbe->save();
 	}
