@@ -211,6 +211,9 @@ class nabaztag extends eqLogic {
 			return '';
 		}
 		$_version = jeedom::versionAlias($_version);
+		if ($this->getDisplay('hideOn' . $_version) == 1) {
+			return '';
+		}
 		$background = $this->getBackgroundColor($_version);
 		$replace = array(
 			'#name#' => $this->getName(),
@@ -219,7 +222,7 @@ class nabaztag extends eqLogic {
 			'#eqLink#' => $this->getLinkToConfiguration(),
 		);
 		foreach ($this->getCmd('action') as $cmd) {
-			if ($cmd->getIsVisible() == 1) {
+			if ($cmd->getIsVisible() == 1 && $cmd->getDisplay('hideOn' . $_version) != 1) {
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
 			} else {
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = '';
