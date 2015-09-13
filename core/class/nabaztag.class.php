@@ -214,12 +214,12 @@ class nabaztag extends eqLogic {
 		if ($this->getDisplay('hideOn' . $_version) == 1) {
 			return '';
 		}
-		$background = $this->getBackgroundColor($_version);
 		$replace = array(
 			'#name#' => $this->getName(),
 			'#id#' => $this->getId(),
-			'#background_color#' => $background,
+			'#background_color#' => $this->getBackgroundColor($_version),
 			'#eqLink#' => $this->getLinkToConfiguration(),
+			'#cmdColor#' => '#4CDFC2',
 		);
 		foreach ($this->getCmd('action') as $cmd) {
 			if ($cmd->getIsVisible() == 1 && $cmd->getDisplay('hideOn' . $_version) != 1) {
