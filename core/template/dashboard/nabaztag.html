@@ -3,10 +3,10 @@
 	<i id="micro_#id#" class='icon loisir-microphone52 pull-left cursor micro' style="margin-top: 3px;margin-left: 5px;" title="Gérer le son"></i>
 	<center><a href="#eqLink#" style="font-size : 1.5em;"> #name# </a></center>
 	<div class="row" style="margin-right : 5px;">
-		<div class="col-xs-4">
-			<img class="cursor" src="plugins/nabaztag/core/template/images/awake.png" alt="Nabaztag" height="85" style="margin-left: 3px;">
+		<div class="col-xs-3">
+			<img class="cursor" src="plugins/nabaztag/core/template/images/awake.png" alt="Nabaztag" height="85" style="margin-left: -8px;">
 		</div>
-		<div class="col-xs-8">
+		<div class="col-xs-9">
 			<center>
 				Oreilles
 				<div class="row">
@@ -39,7 +39,7 @@
 					$(".nabaztag[data-eqLogic_id=#id#] .rightears").on('slideStop', function (ev) {
 						jeedom.cmd.execute({id: '#rightear_id#', value: {slider: ev.value}});
 					});
-				</script><br/>
+				</script>
 				<span class="cmd cmd-widget cursor tooltips sleep" data-cmd_id="#sleep_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="icon maison-person1" title="Dodo"></i></a></span>
 				<span class="cmd cmd-widget cursor tooltips wakeup" data-cmd_id="#wakeup_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="icon divers-circular114" title="Debout"></i></a></span>
 				<span class="cmd cmd-widget cursor tooltips airquality" data-cmd_id="#airquality_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="icon nature-plant30" title="Qualité de l'air"></i></a></span>
