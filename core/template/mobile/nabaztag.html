@@ -1,76 +1,84 @@
 <div class="eqLogic-widget eqLogic nabaztag" style="background-color: #background_color#; padding : 0px;#style#" data-eqLogic_id="#id#" data-version="mobile" >
-    <span class="statusCmd" style="position : absolute;left : 5px; width : 30px;z-index: 1030;"></span>
-    <center>#name#</center>
-    
-    <center>
-        <img class="cursor" src="plugins/nabaztag/core/template/images/awake.png" alt="Nabaztag" height="85">
-    </center>
-    <center>
-        <div class="leftear" style="width: 80px;"></div>
-        <div class="leftear full-width-slider" style="width: 96%;text-align: right;min-width : 100px;">
-            <input type="range" min="0" max="16" data-theme="a"/>
-        </div>
-        <div class="rightear" style="width: 80px;"></div>
-        <div class="rightear full-width-slider" style="width: 96%;text-align: right;min-width : 100px;">
-            <input type="range" min="0" max="16" data-theme="a" />
-        </div>
-        <div style="margin : 5px;">
-        <span class="cmd cmd-widget cursor tooltips sleep" data-cmd_id="#sleep_id#" style="font-size : 2.5em;"><i class="icon maison-person1" title="Dodo"></i></span>
-        <span class="cmd cmd-widget cursor tooltips wakeup" data-cmd_id="#wakeup_id#" style="font-size : 2.5em;"><i class="icon divers-circular114" title="Debout"></i></span>
-        <span class="cmd cmd-widget cursor tooltips airquality" data-cmd_id="#airquality_id#" style="font-size : 2.5em;"><i class="icon nature-plant30" title="Qualité de l'air"></i></span>
-        <span class="cmd cmd-widget cursor tooltips ephemeris" data-cmd_id="#ephemeris_id#" style="font-size : 2.5em;"><i class="fa fa-sun-o" title="Ephéméride"></i></span>
-        <span class="cmd cmd-widget cursor tooltips sayhour" data-cmd_id="#sayhour_id#" style="font-size : 2.5em;"><i class="fa fa-clock-o" title="Horloge parlante"></i></span>
-        <span class="cmd cmd-widget cursor tooltips weather" data-cmd_id="#weather_id#" style="font-size : 2.5em;"><i class="fa fa-cloud" title="Météo"></i></span>
-        <span class="cmd cmd-widget cursor tooltips proverbe" data-cmd_id="#proverbe_id#" style="font-size : 2.5em;"><i class="fa fa-comment" title="Dicton"></i></span>
-        </div>
+  <span class="statusCmd" style="position : absolute;left : 5px; width : 30px;z-index: 1030;"></span>
+  <center>#name#</center>
+  
+  <center>
+    <img class="cursor" src="plugins/nabaztag/core/template/images/awake.png" alt="Nabaztag" height="85">
+  </center>
+  <center>
+    <div class="leftear" style="width: 80px;"></div>
+    <div class="leftear full-width-slider" style="width: 96%;text-align: right;min-width : 100px;">
+      <input type="range" min="0" max="16" data-theme="a"/>
+    </div>
+    <div class="rightear" style="width: 80px;"></div>
+    <div class="rightear full-width-slider" style="width: 96%;text-align: right;min-width : 100px;">
+      <input type="range" min="0" max="16" data-theme="a" />
+    </div>
+    <div style="margin : 5px;">
+      <span class="cmd cmd-widget cursor tooltips sleep" data-cmd_id="#sleep_id#"><a class="action ui-btn ui-mini ui-btn-inline ui-btn-raised" style="background-color:#cmdColor# !important;"><i class="icon maison-person1" title="Dodo"></i></a></span>
+      <span class="cmd cmd-widget cursor tooltips wakeup" data-cmd_id="#wakeup_id#"><a class="action ui-btn ui-mini ui-btn-inline ui-btn-raised" style="background-color:#cmdColor# !important;"><i class="icon divers-circular114" title="Debout"></i></a></span>
+      <span class="cmd cmd-widget cursor tooltips airquality" data-cmd_id="#airquality_id#"><a class="action ui-btn ui-mini ui-btn-inline ui-btn-raised" style="background-color:#cmdColor# !important;"><i class="icon nature-plant30" title="Qualité de l'air"></i></a></span>
+      <span class="cmd cmd-widget cursor tooltips ephemeris" data-cmd_id="#ephemeris_id#"><a class="action ui-btn ui-mini ui-btn-inline ui-btn-raised" style="background-color:#cmdColor# !important;"><i class="fa fa-sun-o" title="Ephéméride"></i></a></span>
+      <span class="cmd cmd-widget cursor tooltips sayhour" data-cmd_id="#sayhour_id#"><a class="action ui-btn ui-mini ui-btn-inline ui-btn-raised" style="background-color:#cmdColor# !important;"><i class="fa fa-clock-o" title="Horloge parlante"></i></a></span>
+      <span class="cmd cmd-widget cursor tooltips weather" data-cmd_id="#weather_id#"><a class="action ui-btn ui-mini ui-btn-inline ui-btn-raised" style="background-color:#cmdColor# !important;"><i class="fa fa-cloud" title="Météo"></i></a></span>
+      <span class="cmd cmd-widget cursor tooltips proverbe" data-cmd_id="#proverbe_id#"><a class="action ui-btn ui-mini ui-btn-inline ui-btn-raised" style="background-color:#cmdColor# !important;"><i class="fa fa-comment" title="Dicton"></i></a></span>
+    </div>
 
-        <script>
-           $("body").undelegate(".nabaztag[data-eqLogic_id=#id#] .leftear",'slidestop');
-           $("body").delegate(".nabaztag[data-eqLogic_id=#id#] .leftear",'slidestop', function (event, ui) {
-               jeedom.cmd.execute({id: '#leftear_id#', value: {slider: $(".nabaztag[data-eqLogic_id=#id#] .leftear input").value()}});
-           });
-           $("body").undelegate(".nabaztag[data-eqLogic_id=#id#] .rightear",'slidestop');
-           $("body").delegate(".nabaztag[data-eqLogic_id=#id#] .rightear",'slidestop', function (event, ui) {
-               jeedom.cmd.execute({id: '#rightear_id#', value: {slider: $(".nabaztag[data-eqLogic_id=#id#] .rightear input").value()}});
-           });
-       </script>
-   </center>
+    <script>
+     $("body").undelegate(".nabaztag[data-eqLogic_id=#id#] .leftear",'slidestop');
+     $("body").delegate(".nabaztag[data-eqLogic_id=#id#] .leftear",'slidestop', function (event, ui) {
+       jeedom.cmd.execute({id: '#leftear_id#', value: {slider: $(".nabaztag[data-eqLogic_id=#id#] .leftear input").value()}});
+     });
+     $("body").undelegate(".nabaztag[data-eqLogic_id=#id#] .rightear",'slidestop');
+     $("body").delegate(".nabaztag[data-eqLogic_id=#id#] .rightear",'slidestop', function (event, ui) {
+       jeedom.cmd.execute({id: '#rightear_id#', value: {slider: $(".nabaztag[data-eqLogic_id=#id#] .rightear input").value()}});
+     });
+   </script>
+ </center>
 
-   <script>
-    $('.eqLogic[data-eqLogic_id=#id#] .cmd').on('click', function() {
-       jeedom.cmd.execute({id: $(this).data('cmd_id')});
-   });
-    if('#speak_id#' == ''){
-      $('#micro_#id#').hide();
-    }
-    if('#leftear_id#' == ''){
-      $('.nabaztag[data-eqLogic_id=#id#] .leftears').hide();
-    }
-    if('#rightear_id#' == ''){
-      $('.nabaztag[data-eqLogic_id=#id#] .rightears').hide();
-    }
-    if('#sleep_id#' == ''){
-      $('.nabaztag[data-eqLogic_id=#id#] .sleep').hide();
-    }
-    if('#wakeup_id#' == ''){
-      $('.nabaztag[data-eqLogic_id=#id#] .wakeup').hide();
-    }
-    if('#airquality_id#' == ''){
-      $('.nabaztag[data-eqLogic_id=#id#] .airquality').hide();
-    }
-    if('#ephemeris_id#' == ''){
-      $('.nabaztag[data-eqLogic_id=#id#] .ephemeris').hide();
-    }
-    if('#sayhour_id#' == ''){
-      $('.nabaztag[data-eqLogic_id=#id#] .sayhour').hide();
-    }
-    if('#weather_id#' == ''){
-      $('.nabaztag[data-eqLogic_id=#id#] .weather').hide();
-    }
-    if('#proverbe_id#' == ''){
-      $('.nabaztag[data-eqLogic_id=#id#] .proverbe').hide();
-    }
+ <script>
+  $('.eqLogic[data-eqLogic_id=#id#] .cmd').on('click', function() {
+   jeedom.cmd.execute({id: $(this).data('cmd_id')});
+ });
+  if('#speak_id#' == ''){
+    $('#micro_#id#').hide();
+  }
+  if('#leftear_id#' == ''){
+    $('.nabaztag[data-eqLogic_id=#id#] .leftears').hide();
+  }
+  if('#rightear_id#' == ''){
+    $('.nabaztag[data-eqLogic_id=#id#] .rightears').hide();
+  }
+  if('#sleep_id#' == ''){
+    $('.nabaztag[data-eqLogic_id=#id#] .sleep').hide();
+  }
+  if('#wakeup_id#' == ''){
+    $('.nabaztag[data-eqLogic_id=#id#] .wakeup').hide();
+  }
+  if('#airquality_id#' == ''){
+    $('.nabaztag[data-eqLogic_id=#id#] .airquality').hide();
+  }
+  if('#ephemeris_id#' == ''){
+    $('.nabaztag[data-eqLogic_id=#id#] .ephemeris').hide();
+  }
+  if('#sayhour_id#' == ''){
+    $('.nabaztag[data-eqLogic_id=#id#] .sayhour').hide();
+  }
+  if('#weather_id#' == ''){
+    $('.nabaztag[data-eqLogic_id=#id#] .weather').hide();
+  }
+  if('#proverbe_id#' == ''){
+    $('.nabaztag[data-eqLogic_id=#id#] .proverbe').hide();
+  }
 </script>
 
+<style>
+  .nabaztag[data-eqLogic_id="#id#"] .ui-slider-handle{
+    background-color:#cmdColor# !important;
+  }
+  .nabaztag[data-eqLogic_id="#id#"] .ui-slider-bg{
+    background-color:#cmdColor# !important;
+  }
+</style>
 </div>
 
