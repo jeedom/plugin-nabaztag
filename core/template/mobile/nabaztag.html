@@ -37,7 +37,7 @@
  </center>
 
  <script>
-  $('.eqLogic[data-eqLogic_id=#id#] .cmd').on('click', function() {
+  $('.eqLogic[data-eqLogic_uid=#uid#] .cmd').on('click', function() {
    jeedom.cmd.execute({id: $(this).data('cmd_id')});
  });
   if('#leftear_id#' == ''){
