@@ -220,6 +220,7 @@ class nabaztag extends eqLogic {
 			'#background_color#' => $this->getBackgroundColor($_version),
 			'#eqLink#' => $this->getLinkToConfiguration(),
 			'#cmdColor#' => '#4CDFC2',
+			'#uid#' => 'sonos' . $this->getId() . self::UIDDELIMITER . mt_rand() . self::UIDDELIMITER,
 		);
 		foreach ($this->getCmd('action') as $cmd) {
 			if ($cmd->getIsVisible() == 1 && $cmd->getDisplay('hideOn' . $_version) != 1) {

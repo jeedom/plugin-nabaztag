@@ -1,6 +1,6 @@
-<div class="eqLogic-widget eqLogic noResize nabaztag" style="width: 240px;background-color: #background_color#; padding : 0px; #style#" data-eqLogic_id="#id#" data-version="dashboard" >
+<div class="eqLogic-widget eqLogic noResize nabaztag" style="width: 240px;background-color: #background_color#; padding : 0px; #style#" data-eqLogic_id="#id#" data-eqLogic_uid="#uid#" data-version="dashboard" >
 	<span class="statusCmd" style="position : absolute;left : 5px;bottom : 5px; width : 30px;z-index: 1030;"></span>
-	<i id="micro_#id#" class='icon loisir-microphone52 pull-left cursor micro' style="margin-top: 3px;margin-left: 5px;" title="Gérer le son"></i>
+	<i class='icon loisir-microphone52 pull-left cursor micro micro_#id#' style="margin-top: 3px;margin-left: 5px;" title="Gérer le son"></i>
 	<center><a href="#eqLink#" style="font-size : 1.5em;"> #name# </a></center>
 	<div class="row" style="margin-right : 5px;">
 		<div class="col-xs-3">
@@ -18,25 +18,25 @@
 					</div>
 				</div>
 				<script>
-					$(".nabaztag[data-eqLogic_id=#id#] .leftears").bootstrapSlider({
+					$(".nabaztag[data-eqLogic_uid=#uid#] .leftears").bootstrapSlider({
 						min: 0,
 						max: 16,
 						value: 0,
 					});
-					$(".nabaztag[data-eqLogic_id=#id#] .slider.slider-horizontal").css('z-index',1);
-					$(".nabaztag[data-eqLogic_id=#id#] .leftears").on('slideStop', function (ev) {
+					$(".nabaztag[data-eqLogic_uid=#uid#] .slider.slider-horizontal").css('z-index',1);
+					$(".nabaztag[data-eqLogic_uid=#uid#] .leftears").on('slideStop', function (ev) {
 						jeedom.cmd.execute({id: '#leftear_id#', value: {slider: ev.value}});
 					});
 				</script>
 				
 				<script>
-					$(".nabaztag[data-eqLogic_id=#id#] .rightears").bootstrapSlider({
+					$(".nabaztag[data-eqLogic_uid=#uid#] .rightears").bootstrapSlider({
 						min: 0,
 						max: 16,
 						value: 0,
 					});
-					$(".nabaztag[data-eqLogic_id=#id#] .slider.slider-horizontal").css('z-index',1);
-					$(".nabaztag[data-eqLogic_id=#id#] .rightears").on('slideStop', function (ev) {
+					$(".nabaztag[data-eqLogic_uid=#uid#] .slider.slider-horizontal").css('z-index',1);
+					$(".nabaztag[data-eqLogic_uid=#uid#] .rightears").on('slideStop', function (ev) {
 						jeedom.cmd.execute({id: '#rightear_id#', value: {slider: ev.value}});
 					});
 				</script>
@@ -52,43 +52,43 @@
 	</div>
 
 	<script>
-		$('.eqLogic[data-eqLogic_id=#id#] .cmd').on('click', function() {
+		$('.eqLogic[data-eqLogic_uid=#uid#] .cmd').on('click', function() {
 			jeedom.cmd.execute({id: $(this).data('cmd_id')});
 		});
 
-		$('#micro_#id#').on('click', function() {
+		$('.eqLogic[data-eqLogic_uid=#uid#] .micro_#id#').on('click', function() {
 			$('#md_modal2').dialog({title: "Jouer du son sur le Karotz"});
 			$('#md_modal2').load('index.php?v=d&plugin=nabaztag&modal=micro.nabaztag&id=#id#').dialog('open');
 		});
 		if('#speak_id#' == ''){
-			$('#micro_#id#').hide();
+			$('.eqLogic[data-eqLogic_uid=#uid#] .micro_#id#').hide();
 		}
 		if('#leftear_id#' == ''){
-			$('.nabaztag[data-eqLogic_id=#id#] .leftears').hide();
+			$('.nabaztag[data-eqLogic_uid=#uid#] .leftears').hide();
 		}
 		if('#rightear_id#' == ''){
-			$('.nabaztag[data-eqLogic_id=#id#] .rightears').hide();
+			$('.nabaztag[data-eqLogic_uid=#uid#] .rightears').hide();
 		}
 		if('#sleep_id#' == ''){
-			$('.nabaztag[data-eqLogic_id=#id#] .sleep').hide();
+			$('.nabaztag[data-eqLogic_uid=#uid#] .sleep').hide();
 		}
 		if('#wakeup_id#' == ''){
-			$('.nabaztag[data-eqLogic_id=#id#] .wakeup').hide();
+			$('.nabaztag[data-eqLogic_uid=#uid#] .wakeup').hide();
 		}
 		if('#airquality_id#' == ''){
-			$('.nabaztag[data-eqLogic_id=#id#] .airquality').hide();
+			$('.nabaztag[data-eqLogic_uid=#uid#] .airquality').hide();
 		}
 		if('#ephemeris_id#' == ''){
-			$('.nabaztag[data-eqLogic_id=#id#] .ephemeris').hide();
+			$('.nabaztag[data-eqLogic_uid=#uid#] .ephemeris').hide();
 		}
 		if('#sayhour_id#' == ''){
-			$('.nabaztag[data-eqLogic_id=#id#] .sayhour').hide();
+			$('.nabaztag[data-eqLogic_uid=#uid#] .sayhour').hide();
 		}
 		if('#weather_id#' == ''){
-			$('.nabaztag[data-eqLogic_id=#id#] .weather').hide();
+			$('.nabaztag[data-eqLogic_uid=#uid#] .weather').hide();
 		}
 		if('#proverbe_id#' == ''){
-			$('.nabaztag[data-eqLogic_id=#id#] .proverbe').hide();
+			$('.nabaztag[data-eqLogic_uid=#uid#] .proverbe').hide();
 		}
 	</script>
 </div>

@@ -1,4 +1,4 @@
-<div class="eqLogic-widget eqLogic nabaztag" style="background-color: #background_color#; padding : 0px;#style#" data-eqLogic_id="#id#" data-version="mobile" >
+<div class="eqLogic-widget eqLogic nabaztag" style="background-color: #background_color#; padding : 0px;#style#" data-eqLogic_id="#id#" data-eqLogic_uid="#uid#" data-version="mobile" >
   <span class="statusCmd" style="position : absolute;left : 5px; width : 30px;z-index: 1030;"></span>
   <center>#name#</center>
   
@@ -25,13 +25,13 @@
     </div>
 
     <script>
-     $("body").undelegate(".nabaztag[data-eqLogic_id=#id#] .leftear",'slidestop');
-     $("body").delegate(".nabaztag[data-eqLogic_id=#id#] .leftear",'slidestop', function (event, ui) {
-       jeedom.cmd.execute({id: '#leftear_id#', value: {slider: $(".nabaztag[data-eqLogic_id=#id#] .leftear input").value()}});
+     $("body").undelegate(".nabaztag[data-eqLogic_uid=#uid#] .leftear",'slidestop');
+     $("body").delegate(".nabaztag[data-eqLogic_uid=#uid#] .leftear",'slidestop', function (event, ui) {
+       jeedom.cmd.execute({id: '#leftear_id#', value: {slider: $(".nabaztag[data-eqLogic_uid=#uid#] .leftear input").value()}});
      });
-     $("body").undelegate(".nabaztag[data-eqLogic_id=#id#] .rightear",'slidestop');
-     $("body").delegate(".nabaztag[data-eqLogic_id=#id#] .rightear",'slidestop', function (event, ui) {
-       jeedom.cmd.execute({id: '#rightear_id#', value: {slider: $(".nabaztag[data-eqLogic_id=#id#] .rightear input").value()}});
+     $("body").undelegate(".nabaztag[data-eqLogic_uid=#uid#] .rightear",'slidestop');
+     $("body").delegate(".nabaztag[data-eqLogic_uid=#uid#] .rightear",'slidestop', function (event, ui) {
+       jeedom.cmd.execute({id: '#rightear_id#', value: {slider: $(".nabaztag[data-eqLogic_uid=#uid#] .rightear input").value()}});
      });
    </script>
  </center>
@@ -40,43 +40,40 @@
   $('.eqLogic[data-eqLogic_id=#id#] .cmd').on('click', function() {
    jeedom.cmd.execute({id: $(this).data('cmd_id')});
  });
-  if('#speak_id#' == ''){
-    $('#micro_#id#').hide();
-  }
   if('#leftear_id#' == ''){
-    $('.nabaztag[data-eqLogic_id=#id#] .leftears').hide();
+    $('.nabaztag[data-eqLogic_uid=#uid#] .leftears').hide();
   }
   if('#rightear_id#' == ''){
-    $('.nabaztag[data-eqLogic_id=#id#] .rightears').hide();
+    $('.nabaztag[data-eqLogic_uid=#uid#] .rightears').hide();
   }
   if('#sleep_id#' == ''){
-    $('.nabaztag[data-eqLogic_id=#id#] .sleep').hide();
+    $('.nabaztag[data-eqLogic_uid=#uid#] .sleep').hide();
   }
   if('#wakeup_id#' == ''){
-    $('.nabaztag[data-eqLogic_id=#id#] .wakeup').hide();
+    $('.nabaztag[data-eqLogic_uid=#uid#] .wakeup').hide();
   }
   if('#airquality_id#' == ''){
-    $('.nabaztag[data-eqLogic_id=#id#] .airquality').hide();
+    $('.nabaztag[data-eqLogic_uid=#uid#] .airquality').hide();
   }
   if('#ephemeris_id#' == ''){
-    $('.nabaztag[data-eqLogic_id=#id#] .ephemeris').hide();
+    $('.nabaztag[data-eqLogic_uid=#uid#] .ephemeris').hide();
   }
   if('#sayhour_id#' == ''){
-    $('.nabaztag[data-eqLogic_id=#id#] .sayhour').hide();
+    $('.nabaztag[data-eqLogic_uid=#uid#] .sayhour').hide();
   }
   if('#weather_id#' == ''){
-    $('.nabaztag[data-eqLogic_id=#id#] .weather').hide();
+    $('.nabaztag[data-eqLogic_uid=#uid#] .weather').hide();
   }
   if('#proverbe_id#' == ''){
-    $('.nabaztag[data-eqLogic_id=#id#] .proverbe').hide();
+    $('.nabaztag[data-eqLogic_uid=#uid#] .proverbe').hide();
   }
 </script>
 
 <style>
-  .nabaztag[data-eqLogic_id="#id#"] .ui-slider-handle{
+  .nabaztag[data-eqLogic_uid="#uid#"] .ui-slider-handle{
     background-color:#cmdColor# !important;
   }
-  .nabaztag[data-eqLogic_id="#id#"] .ui-slider-bg{
+  .nabaztag[data-eqLogic_uid="#uid#"] .ui-slider-bg{
     background-color:#cmdColor# !important;
   }
 </style>
