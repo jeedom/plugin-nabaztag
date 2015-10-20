@@ -276,7 +276,7 @@ class nabaztagCmd extends cmd {
 		}
 		log::add('nabaztag', 'debug', $request);
 		$request = new com_http($request);
-		$result = $request->exec();
+		$result = $request->exec(10, 1);
 		$xml = new SimpleXMLElement($result);
 		$json = json_decode(json_encode($xml), TRUE);
 		if (isset($json['message']) && ($json['message'] == 'PREMIUM_ONLY' || $json['message'] == 'PLUGINNOTAVAILABLE')) {
