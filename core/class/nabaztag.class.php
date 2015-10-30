@@ -275,11 +275,15 @@ class nabaztagCmd extends cmd {
 			$request = 'http://' . $nabaztag->getConfiguration('addr') . '/ojn/FR/api.jsp?sn=' . $nabaztag->getConfiguration('mac') . '&token=' . $nabaztag->getConfiguration('token') . '&' . $type . '=' . $parameters;
 		}
 		log::add('nabaztag', 'debug', $request);
-		$request = new com_http($request);
-		$result = $request->exec(10, 1);
-		$xml = new SimpleXMLElement($result);
-		$json = json_decode(json_encode($xml), TRUE);
-		if (isset($json['message']) && ($json['message'] == 'PREMIUM_ONLY' || $json['message'] == 'PLUGINNOTAVAILABLE')) {
+		try {
+			$request = new com_http($request);
+			$result = $request->exec(0.1, 1);
+			$xml = new SimpleXMLElement($result);
+			$json = json_decode(json_encode($xml), TRUE);
+		} catch (Exception $e) {
+
+		}
+		if (isset($json) && is_array($json) && isset($json['message']) && ($json['message'] == 'PREMIUM_ONLY' || $json['message'] == 'PLUGINNOTAVAILABLE')) {
 			throw new Exception($json['message'] . ' : ' . $json['comment']);
 		}
 	}
