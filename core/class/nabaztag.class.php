@@ -212,7 +212,7 @@ class nabaztag extends eqLogic {
 		}
 		$_version = jeedom::versionAlias($_version);
 		foreach ($this->getCmd('action') as $cmd) {
-			if ($cmd->getIsVisible() == 1 && $cmd->getDisplay('shwoOn' . $_version, 1) == 1) {
+			if ($cmd->getIsVisible() == 1 && $cmd->getDisplay('showOn' . $_version, 1) == 1) {
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
 			} else {
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = '';
