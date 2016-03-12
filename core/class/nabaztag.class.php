@@ -210,7 +210,7 @@ class nabaztag extends eqLogic {
 		if (!is_array($replace)) {
 			return $replace;
 		}
-		$_version = jeedom::versionAlias($_version);
+		$version = jeedom::versionAlias($_version);
 		foreach ($this->getCmd('action') as $cmd) {
 			if ($cmd->getIsVisible() == 1 && $cmd->getDisplay('showOn' . $_version, 1) == 1) {
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
@@ -218,7 +218,7 @@ class nabaztag extends eqLogic {
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = '';
 			}
 		}
-		$html = template_replace($replace, getTemplate('core', $_version, 'nabaztag', 'nabaztag'));
+		$html = template_replace($replace, getTemplate('core', $version, 'nabaztag', 'nabaztag'));
 		return $html;
 	}
 
