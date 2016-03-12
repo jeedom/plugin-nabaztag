@@ -22,6 +22,8 @@ require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
 class nabaztag extends eqLogic {
 	/*     * *************************Attributs****************************** */
 
+	public static $_widgetPossibility = array('custom' => true);
+
 	/*     * ***********************Methode static*************************** */
 
 	/*     * *********************Methode d'instance************************* */
@@ -204,39 +206,18 @@ class nabaztag extends eqLogic {
 	}
 
 	public function toHtml($_version = 'dashboard') {
-		if ($this->getIsEnable() != 1) {
-			return '';
-		}
-		if (!$this->hasRight('r')) {
-			return '';
+		$replace = $this->preToHtml($_version);
+		if (!is_array($replace)) {
+			return $replace;
 		}
 		$_version = jeedom::versionAlias($_version);
-		if ($this->getDisplay('hideOn' . $_version) == 1) {
-			return '';
-		}
-		$replace = array(
-			'#name#' => $this->getName(),
-			'#id#' => $this->getId(),
-			'#background_color#' => $this->getBackgroundColor($_version),
-			'#eqLink#' => $this->getLinkToConfiguration(),
-			'#cmdColor#' => '#4CDFC2',
-			'#uid#' => 'sonos' . $this->getId() . self::UIDDELIMITER . mt_rand() . self::UIDDELIMITER,
-		);
 		foreach ($this->getCmd('action') as $cmd) {
-			if ($cmd->getIsVisible() == 1 && $cmd->getDisplay('hideOn' . $_version) != 1) {
+			if ($cmd->getIsVisible() == 1 && $cmd->getDisplay('shwoOn' . $_version, 1) == 1) {
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
 			} else {
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = '';
 			}
 		}
-
-		$parameters = $this->getDisplay('parameters');
-		if (is_array($parameters)) {
-			foreach ($parameters as $key => $value) {
-				$replace['#' . $key . '#'] = $value;
-			}
-		}
-
 		$html = template_replace($replace, getTemplate('core', $_version, 'nabaztag', 'nabaztag'));
 		return $html;
 	}

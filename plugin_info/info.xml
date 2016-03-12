@@ -7,7 +7,7 @@
     <licence>AGPL</licence>
     <author>Thomas Martinez</author>
     <installation>Aucune</installation>
-    <require>1.10</require>
+    <require>2.2</require>
     <version>2.5</version>
     <category>communication</category>
 </info>

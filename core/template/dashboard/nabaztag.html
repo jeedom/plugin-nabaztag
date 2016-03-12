@@ -1,7 +1,7 @@
-<div class="eqLogic-widget eqLogic noResize nabaztag" style="width: 240px;background-color: #background_color#; padding : 0px; #style#" data-eqLogic_id="#id#" data-eqLogic_uid="#uid#" data-version="dashboard" >
+<div class="eqLogic-widget eqLogic noResize nabaztag" style="width: 240px;border:#border#;border-radius:#border-radius#;background-color: #background-color#;color: #color#;#style#; padding : 0px;" data-eqLogic_id="#id#" data-eqLogic_uid="#uid#" data-version="dashboard" >
 	<span class="statusCmd" style="position : absolute;left : 5px;bottom : 5px; width : 30px;z-index: 1030;"></span>
 	<i class='icon loisir-microphone52 pull-left cursor micro micro_#id#' style="margin-top: 3px;margin-left: 5px;" title="Gérer le son"></i>
-	<center><a href="#eqLink#" style="font-size : 1.5em;"> #name# </a></center>
+	<center><a href="#eqLink#" style="font-size : 1.5em;#hideEqLogicName#">#name_display#</a></center>
 	<div class="row" style="margin-right : 5px;">
 		<div class="col-xs-3">
 			<img class="cursor" src="plugins/nabaztag/core/template/images/awake.png" alt="Nabaztag" height="85" style="margin-left: -8px;">
@@ -40,13 +40,13 @@
 						jeedom.cmd.execute({id: '#rightear_id#', value: {slider: ev.value}});
 					});
 				</script>
-				<span class="cmd cmd-widget cursor tooltips sleep" data-cmd_id="#sleep_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="icon maison-person1" title="Dodo"></i></a></span>
-				<span class="cmd cmd-widget cursor tooltips wakeup" data-cmd_id="#wakeup_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="icon divers-circular114" title="Debout"></i></a></span>
-				<span class="cmd cmd-widget cursor tooltips airquality" data-cmd_id="#airquality_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="icon nature-plant30" title="Qualité de l'air"></i></a></span>
-				<span class="cmd cmd-widget cursor tooltips ephemeris" data-cmd_id="#ephemeris_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="fa fa-sun-o" title="Ephéméride"></i></a></span>
-				<span class="cmd cmd-widget cursor tooltips sayhour" data-cmd_id="#sayhour_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="fa fa-clock-o" title="Horloge parlante"></i></a></span>
-				<span class="cmd cmd-widget cursor tooltips weather" data-cmd_id="#weather_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="fa fa-cloud" title="Météo"></i></a></span>
-				<span class="cmd cmd-widget cursor tooltips proverbe" data-cmd_id="#proverbe_id#"><a class="btn" style="background-color : #cmdColor# !important;"><i class="fa fa-comment" title="Dicton"></i></a></span>
+				<span class="cmd cmd-widget cursor tooltips sleep" data-cmd_id="#sleep_id#"><a class="btn" style="background-color : #cmd-background-color# !important;"><i class="icon maison-person1" title="Dodo"></i></a></span>
+				<span class="cmd cmd-widget cursor tooltips wakeup" data-cmd_id="#wakeup_id#"><a class="btn" style="background-color : #cmd-background-color# !important;"><i class="icon divers-circular114" title="Debout"></i></a></span>
+				<span class="cmd cmd-widget cursor tooltips airquality" data-cmd_id="#airquality_id#"><a class="btn" style="background-color : #cmd-background-color# !important;"><i class="icon nature-plant30" title="Qualité de l'air"></i></a></span>
+				<span class="cmd cmd-widget cursor tooltips ephemeris" data-cmd_id="#ephemeris_id#"><a class="btn" style="background-color : #cmd-background-color# !important;"><i class="fa fa-sun-o" title="Ephéméride"></i></a></span>
+				<span class="cmd cmd-widget cursor tooltips sayhour" data-cmd_id="#sayhour_id#"><a class="btn" style="background-color : #cmd-background-color# !important;"><i class="fa fa-clock-o" title="Horloge parlante"></i></a></span>
+				<span class="cmd cmd-widget cursor tooltips weather" data-cmd_id="#weather_id#"><a class="btn" style="background-color : #cmd-background-color# !important;"><i class="fa fa-cloud" title="Météo"></i></a></span>
+				<span class="cmd cmd-widget cursor tooltips proverbe" data-cmd_id="#proverbe_id#"><a class="btn" style="background-color : #cmd-background-color# !important;"><i class="fa fa-comment" title="Dicton"></i></a></span>
 			</center>
 		</div>
 	</div>
