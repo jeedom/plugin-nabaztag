@@ -227,6 +227,8 @@ class nabaztag extends eqLogic {
 class nabaztagCmd extends cmd {
 	/*     * *************************Attributs****************************** */
 
+	public static $_widgetPossibility = array('custom' => false);
+
 	/*     * ***********************Methode static*************************** */
 
 	/*     * *********************Methode d'instance************************* */
