@@ -264,7 +264,7 @@ class nabaztagCmd extends cmd {
 			$xml = new SimpleXMLElement($result);
 			$json = json_decode(json_encode($xml), TRUE);
 		} catch (Exception $e) {
-			log::add('nabaztag', 'info', log::exception($e));
+			log::add('nabaztag', 'debug', log::exception($e));
 		}
 		if (isset($json) && is_array($json) && isset($json['message']) && ($json['message'] == 'PREMIUM_ONLY' || $json['message'] == 'PLUGINNOTAVAILABLE')) {
 			throw new Exception($json['message'] . ' : ' . $json['comment']);
