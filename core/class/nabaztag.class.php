@@ -218,8 +218,7 @@ class nabaztag extends eqLogic {
 				$replace['#' . $cmd->getLogicalId() . '_id#'] = '';
 			}
 		}
-		$html = template_replace($replace, getTemplate('core', $version, 'nabaztag', 'nabaztag'));
-		return $html;
+		return $this->postToHtml($_version, template_replace($replace, getTemplate('core', $version, 'nabaztag', 'nabaztag')));
 	}
 
 }
