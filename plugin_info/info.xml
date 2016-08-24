@@ -3,12 +3,9 @@
     <id>nabaztag</id>
     <name>Nabaztag</name>
     <description>Plugin pour commander le Nabaztag</description>
-    <icon>fa fa-play-circle</icon>
     <licence>AGPL</licence>
-    <author>Thomas Martinez</author>
-    <installation>Aucune</installation>
+    <author>Loïc</author>
     <require>2.2</require>
-    <version>2.5</version>
     <category>devicecommunication</category>
 </info>
 
