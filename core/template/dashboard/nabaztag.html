@@ -18,26 +18,26 @@
 					</div>
 				</div>
 				<script>
-					$(".nabaztag[data-eqLogic_uid=#uid#] .leftears").bootstrapSlider({
+					$(".nabaztag[data-eqLogic_uid=#uid#] .leftears").slider({
 						min: 0,
 						max: 16,
 						value: 0,
 					});
 					$(".nabaztag[data-eqLogic_uid=#uid#] .slider.slider-horizontal").css('z-index',1);
-					$(".nabaztag[data-eqLogic_uid=#uid#] .leftears").on('slideStop', function (ev) {
-						jeedom.cmd.execute({id: '#leftear_id#', value: {slider: ev.value}});
+					$(".nabaztag[data-eqLogic_uid=#uid#] .leftears").on('slideStop', function (event,ui) {
+						jeedom.cmd.execute({id: '#leftear_id#', value: {slider: ui.value}});
 					});
 				</script>
 				
 				<script>
-					$(".nabaztag[data-eqLogic_uid=#uid#] .rightears").bootstrapSlider({
+					$(".nabaztag[data-eqLogic_uid=#uid#] .rightears").slider({
 						min: 0,
 						max: 16,
 						value: 0,
 					});
 					$(".nabaztag[data-eqLogic_uid=#uid#] .slider.slider-horizontal").css('z-index',1);
-					$(".nabaztag[data-eqLogic_uid=#uid#] .rightears").on('slideStop', function (ev) {
-						jeedom.cmd.execute({id: '#rightear_id#', value: {slider: ev.value}});
+					$(".nabaztag[data-eqLogic_uid=#uid#] .rightears").on('slideStop', function (event,ui) {
+						jeedom.cmd.execute({id: '#rightear_id#', value: {slider: ui.value}});
 					});
 				</script>
 				<span class="cmd cmd-widget cursor sleep" data-cmd_id="#sleep_id#"><a class="btn" style="background-color : #cmd-background-color# !important;"><i class="icon maison-person1" title="Dodo"></i></a></span>
