@@ -24,7 +24,7 @@ Vous retrouvez ici toute la configuration de votre équipement :
 * *Catégorie* : les catégories de l'équipement (il peut appartenir à plusieurs catégories)
 * *Activer* : permet de rendre votre équipement actif
 * *Visible* : le rend visible sur le dashboard
-* *Adresse (openjabnab.fr ou @IP)* : adresse openjabnab ou IP (DNS) de votre openjabnab si vous l'autohebergez
+* *Adresse (openjabnab.fr ou @IP)* : adresse openjabnab ou IP (DNS) de votre openjabnab si vous l'auto-hébergez
 * *Adresse MAC* : adresse mac de votre lapin (voir plus bas)
 * *Token d'API Violet* : token de l'api (voir plus bas)
 
@@ -37,21 +37,21 @@ En dessous vous retrouvez la liste des commandes :
 
 La liste des commandes est la suivante : 
 
-* *Debout* : Permet de reveiller le lapin
-* *Redemarrer* : Permet de redemarrer le lapin
+* *Debout* : Permet de réveiller le lapin
+* *Redemarrer* : Permet de redémarrer le lapin
 * *Coucher* : Permet de dire au lapin d'aller se coucher
-* *Qualité de lair* : Donne la qualité de l'air (necessite l'activation du plugin correspondant dans openjabnab)
-* *Ephéméride* : Donne les ephéméride (necessite l'activation du plugin correspondant dans openjabnab)
-* *Horloge parlante* : Donne l'heure (necessite l'activation du plugin correspondant dans openjabnab)
-* *Météo* : Donne la météo (necessite l'activation du plugin correspondant dans openjabnab)
-* *Dicton* : Donne un dicton (necessite l'activation du plugin correspondant dans openjabnab)
-* *Oreille gauche* : Permet de choisir la position de l'oreille gauche (16 positions possible)
-* *Oreille droite* : Permet de choisir la position de l'oreille droite (16 positions possible)
+* *Qualité de lair* : Donne la qualité de l'air (nécessite l'activation du plugin correspondant dans openjabnab)
+* *Ephéméride* : Donne les ephémérides (nécessite l'activation du plugin correspondant dans openjabnab)
+* *Horloge parlante* : Donne l'heure (nécessite l'activation du plugin correspondant dans openjabnab)
+* *Météo* : Donne la météo (nécessite l'activation du plugin correspondant dans openjabnab)
+* *Dicton* : Donne un dicton (nécessite l'activation du plugin correspondant dans openjabnab)
+* *Oreille gauche* : Permet de choisir la position de l'oreille gauche (16 positions possibles)
+* *Oreille droite* : Permet de choisir la position de l'oreille droite (16 positions possibles)
 * *Parle* : Permet de faire dire une phrase au lapin
 
-== Recupèrer l'adresse max et le token 
+== Récupérer l'adresse max et le token 
 
-Allez sur le site link:http://openjabnab.fr/ojn_admin/index.php[openjabnab] puis connectez vous à votre compte : 
+Allez sur le site link:http://openjabnab.fr/ojn_admin/index.php[openjabnab] puis connectez-vous à votre compte : 
 
 image:../images/nabaztag4.png[]
 
@@ -63,7 +63,7 @@ Puis cliquez sur API :
 
 image:../images/nabaztag6.png[]
 
-Ici ativez l'api violet et public et recuperez l'addresse mac ainsi que la clef  api violet pour la mettre dans la configuration de votre lapin sur Jeedom
+Ici activez l'api violet et public et récupérez l'addresse mac ainsi que la clef  api violet pour la mettre dans la configuration de votre lapin sur Jeedom
 
 == Widget
 
