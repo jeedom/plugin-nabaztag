@@ -2,7 +2,7 @@
 
 Plugin pour commander le Nabaztag. 
 
-== Configuration
+== Konfiguration
 include::configuration.asciidoc[]
 
 '''
