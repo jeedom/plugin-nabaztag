@@ -25,7 +25,7 @@ Une fois un équipement sélectionné vous obtenez :
 
 ![nabaztag3](../images/nabaztag3.png)
 
-Vous retrouvez ici toute la configuration de votre équipement :
+Hier finden sie die ganze Konfiguration Ihrer Geräte:
 
 -   **Nom de l’équipement Nabaztag** : nom de votre équipement Nabaztag
 
@@ -46,7 +46,7 @@ Vous retrouvez ici toute la configuration de votre équipement :
 
 -   **Token d’API Violet** : token de l’api (voir plus bas)
 
-En dessous vous retrouvez la liste des commandes :
+Im unteren Bereich finden sie eine Liste der Befehle :
 
 -   le nom affiché sur le dashboard
 

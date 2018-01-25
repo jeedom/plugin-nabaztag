@@ -25,11 +25,11 @@ Une fois un équipement sélectionné vous obtenez :
 
 ![nabaztag3](../images/nabaztag3.png)
 
-Vous retrouvez ici toute la configuration de votre équipement :
+You can find here the full configuration of your device :
 
 -   **Nom de l’équipement Nabaztag** : nom de votre équipement Nabaztag
 
--   **Objet parent** : indique l’objet parent auquel appartient
+-   **Parent Object** : means the parent object the equipment depend
     l’équipement
 
 -   **Catégorie** : les catégories de l’équipement (il peut appartenir à

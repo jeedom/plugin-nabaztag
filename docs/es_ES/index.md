@@ -25,11 +25,11 @@ Une fois un équipement sélectionné vous obtenez :
 
 ![nabaztag3](../images/nabaztag3.png)
 
-Vous retrouvez ici toute la configuration de votre équipement :
+Aquí encontrará toda la configuración de su dispositivo:
 
 -   **Nom de l’équipement Nabaztag** : nom de votre équipement Nabaztag
 
--   **Objet parent** : indique l’objet parent auquel appartient
+-   **Objeto padre** : especifica el objeto padre al que pertenece
     l’équipement
 
 -   **Catégorie** : les catégories de l’équipement (il peut appartenir à
@@ -46,7 +46,7 @@ Vous retrouvez ici toute la configuration de votre équipement :
 
 -   **Token d’API Violet** : token de l’api (voir plus bas)
 
-En dessous vous retrouvez la liste des commandes :
+A continuación encontrará la lista de ordenes :
 
 -   le nom affiché sur le dashboard
 
