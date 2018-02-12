@@ -3,7 +3,7 @@ Plugin pour commander le Nabaztag.
 Configuration 
 =============
 
-Configuration des équipements 
+Equipment configuration
 =============================
 
 Une fois le plugin installé et activé à partir du Market, on accède à la
@@ -32,7 +32,7 @@ You can find here the full configuration of your device :
 -   **Parent Object** : means the parent object the equipment depend
     l’équipement
 
--   **Catégorie** : les catégories de l’équipement (il peut appartenir à
+-   **Category**: categories of equipment (it may belong to
     plusieurs catégories)
 
 -   **Activer** : permet de rendre votre équipement actif
