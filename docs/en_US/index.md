@@ -30,14 +30,14 @@ You can find here the full configuration of your device :
 -   **Nom de l’équipement Nabaztag** : nom de votre équipement Nabaztag
 
 -   **Parent Object** : means the parent object the equipment depend
-    l’équipement
+    equipment
 
 -   **Category**: categories of equipment (it may belong to
     plusieurs catégories)
 
--   **Activer** : permet de rendre votre équipement actif
+-   **Enable**: makes your equipment active
 
--   **Visible** : le rend visible sur le dashboard
+-   **Visible**: makes it visible on the dashboard
 
 -   **Adresse (openjabnab.fr ou @IP)** : adresse openjabnab ou IP (DNS)
     de votre openjabnab si vous l’auto-hébergez
@@ -56,7 +56,7 @@ En dessous vous retrouvez la liste des commandes :
     la configuration avancée de la commande (méthode
     d’historisation, widget…​)
 
--   Tester : permet de tester la commande
+-   Test: test the command
 
 La liste des commandes est la suivante :
 
