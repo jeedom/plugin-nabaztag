@@ -46,15 +46,15 @@ Sie werden hier alle die Konfiguration Ihrer Geräte finden:
 
 -   **Token d’API Violet** : token de l’api (voir plus bas)
 
-En dessous vous retrouvez la liste des commandes :
+Im unteren Bereich finden sie eine Liste der Befehle :
 
--   le nom affiché sur le dashboard
+-   Der Name, der auf dem Armaturenbrett angezeigt wird
 
 -   afficher : permet d’afficher la donnée sur le dashboard
 
--   configuration avancée (petites roues crantées) : permet d’afficher
-    la configuration avancée de la commande (méthode
-    d’historisation, widget…​)
+-   Erweiterte Konfiguration (kleine Zahnräder) : Erlaubt die erweiterte
+    Konfiguration des Befehls anzuzeigen (Methode der
+    Archivierung, Widget ...)
 
 -   Test: prüft den Befehl
 
