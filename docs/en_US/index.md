@@ -1,6 +1,6 @@
 Plugin pour commander le Nabaztag.
 
-Configuration 
+Configuration
 =============
 
 Equipment configuration
