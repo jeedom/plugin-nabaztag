@@ -1,0 +1,63 @@
+{
+    "desktop\/modal\/micro.nabaztag.php": {
+        "Aucun equipement ne  correspond : Il faut (re)-enregistrer l\\'équipement ": "Ningún equipo coincide: debe (re) registrar el equipo",
+        "L\\'id de l\\'équipement ne peut etre vide : ": "La identificación del equipo no puede estar vacía:",
+        "Message...": "Mensaje ...",
+        "Lire le message": "Lee el mensaje",
+        "Message lu avec succès": "Mensaje leído correctamente"
+    },
+    "desktop\/js\/nabaztag.js": {
+        "Afficher": "visualización",
+        "Tester": "prueba"
+    },
+    "desktop\/php\/nabaztag.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Ajouter un équipement": "Agregar equipo",
+        "Rechercher": "Buscar",
+        "Mes Nabaztag": "Mi nabaztag",
+        "Vous n'avez pas encore de Nabaztag, cliquez sur Ajouter pour commencer": "Aún no tiene un Nabaztag, haga clic en Agregar para comenzar",
+        "Sauvegarder": "Guardar",
+        "Supprimer": "remove",
+        "Configuration avancée": "Configuración avanzada",
+        "Equipement": "equipo",
+        "Commandes": "comandos",
+        "Nom de l'équipement Nabaztag": "Nombre del equipo Nabaztag.",
+        "Objet parent": "Objeto padre",
+        "Aucun": "no",
+        "Catégorie": "categoría",
+        "Activer": "Activar",
+        "Visible": "visible",
+        "Adresse (openjabnab.fr ou @IP)": "Dirección (openjabnab.fr o @IP)",
+        "openjabnab.fr ou @IP": "openjabnab.fr o @IP",
+        "Adresse MAC": "Dirección MAC",
+        "Token d'API Violet": "API Token Purple",
+        "Token": "simbólico",
+        "Nom": "apellido",
+        "Paramètres": "configuraciones",
+        "Action": "acción"
+    },
+    "core\/ajax\/nabaztag.ajax.php": {
+        "401 - Accès non autorisé": "401 - Acceso no autorizado",
+        "Veuillez saisir un message": "Por favor ingrese un mensaje",
+        "Nabaztag non trouvé": "Nabaztag no encontrado",
+        "Commande non trouvée": "Orden no encontrada",
+        "Aucune méthode correspondante à : ": "Ningún método correspondiente a:"
+    },
+    "core\/class\/nabaztag.class.php": {
+        "L\\'adresse MAC ne peut etre vide": "MAC address cannot be empty",
+        "Le token ne peut etre vide": "Token cannot be empty",
+        "L\\'adresse ne peut etre vide": "The address cannot be empty",
+        "Redemarrer": "To restart",
+        "Coucher": "Sleep",
+        "Debout": "Standing",
+        "Parle": "Speak",
+        "Oreille gauche": "Left ear",
+        "Oreille droite": "Right ear",
+        "Qualité de l\\'air": "Air quality",
+        "Ephéméride": "Ephemeris",
+        "Horloge parlante": "Talking clock",
+        "Météo": "weather",
+        "Dicton": "saying",
+        "La requete ne peut etre vide": "The request cannot be empty"
+    }
+}

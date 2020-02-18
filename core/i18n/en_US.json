@@ -1,0 +1,63 @@
+{
+    "desktop\/modal\/micro.nabaztag.php": {
+        "Aucun equipement ne  correspond : Il faut (re)-enregistrer l\\'équipement ": "No equipment matches: You must (re) -register the equipment",
+        "L\\'id de l\\'équipement ne peut etre vide : ": "The equipment id cannot be empty:",
+        "Message...": "Message...",
+        "Lire le message": "Read the message",
+        "Message lu avec succès": "Message successfully read"
+    },
+    "desktop\/js\/nabaztag.js": {
+        "Afficher": "Pin up",
+        "Tester": "Test"
+    },
+    "desktop\/php\/nabaztag.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized access",
+        "Ajouter un équipement": "Add equipment",
+        "Rechercher": "Search",
+        "Mes Nabaztag": "My Nabaztag",
+        "Vous n'avez pas encore de Nabaztag, cliquez sur Ajouter pour commencer": "You don&#39;t have a Nabaztag yet, click Add to start",
+        "Sauvegarder": "Save",
+        "Supprimer": "Remove",
+        "Configuration avancée": "Advanced configuration",
+        "Equipement": "Equipment",
+        "Commandes": "Orders",
+        "Nom de l'équipement Nabaztag": "Name of the Nabaztag equipment",
+        "Objet parent": "Parent object",
+        "Aucun": "No",
+        "Catégorie": "Category",
+        "Activer": "Activate",
+        "Visible": "Visible",
+        "Adresse (openjabnab.fr ou @IP)": "Address (openjabnab.fr or @IP)",
+        "openjabnab.fr ou @IP": "openjabnab.fr or @IP",
+        "Adresse MAC": "MAC address",
+        "Token d'API Violet": "API Token Purple",
+        "Token": "token",
+        "Nom": "Last name",
+        "Paramètres": "Settings",
+        "Action": "Action"
+    },
+    "core\/ajax\/nabaztag.ajax.php": {
+        "401 - Accès non autorisé": "401 - Unauthorized access",
+        "Veuillez saisir un message": "Please enter a message",
+        "Nabaztag non trouvé": "Nabaztag not found",
+        "Commande non trouvée": "Order not found",
+        "Aucune méthode correspondante à : ": "No method corresponding to:"
+    },
+    "core\/class\/nabaztag.class.php": {
+        "L\\'adresse MAC ne peut etre vide": "MAC address cannot be empty",
+        "Le token ne peut etre vide": "Token cannot be empty",
+        "L\\'adresse ne peut etre vide": "The address cannot be empty",
+        "Redemarrer": "To restart",
+        "Coucher": "Sleep",
+        "Debout": "Standing",
+        "Parle": "Speak",
+        "Oreille gauche": "Left ear",
+        "Oreille droite": "Right ear",
+        "Qualité de l\\'air": "Air quality",
+        "Ephéméride": "Ephemeris",
+        "Horloge parlante": "Talking clock",
+        "Météo": "weather",
+        "Dicton": "saying",
+        "La requete ne peut etre vide": "The request cannot be empty"
+    }
+}

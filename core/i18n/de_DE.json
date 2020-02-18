@@ -1,0 +1,63 @@
+{
+    "desktop\/modal\/micro.nabaztag.php": {
+        "Aucun equipement ne  correspond : Il faut (re)-enregistrer l\\'équipement ": "Keine Ausrüstungsübereinstimmungen: Sie müssen die Ausrüstung (neu) registrieren",
+        "L\\'id de l\\'équipement ne peut etre vide : ": "Die Geräte-ID darf nicht leer sein:",
+        "Message...": "Nachricht ...",
+        "Lire le message": "Lesen Sie die Nachricht",
+        "Message lu avec succès": "Nachricht erfolgreich gelesen"
+    },
+    "desktop\/js\/nabaztag.js": {
+        "Afficher": "Anzeige",
+        "Tester": "Test"
+    },
+    "desktop\/php\/nabaztag.php": {
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Ajouter un équipement": "Ausrüstung hinzufügen",
+        "Rechercher": "Suche",
+        "Mes Nabaztag": "Mein Nabaztag",
+        "Vous n'avez pas encore de Nabaztag, cliquez sur Ajouter pour commencer": "Sie haben noch keinen Nabaztag. Klicken Sie zum Hinzufügen auf Hinzufügen",
+        "Sauvegarder": "speichern",
+        "Supprimer": "Entfernen",
+        "Configuration avancée": "Erweiterte Konfiguration",
+        "Equipement": "Ausrüstung",
+        "Commandes": "Befehle",
+        "Nom de l'équipement Nabaztag": "Name der Nabaztag-Ausrüstung",
+        "Objet parent": "Übergeordnetes Objekt",
+        "Aucun": "keine",
+        "Catégorie": "Kategorie",
+        "Activer": "activate",
+        "Visible": "sichtbar",
+        "Adresse (openjabnab.fr ou @IP)": "Adresse (openjabnab.fr oder @IP)",
+        "openjabnab.fr ou @IP": "openjabnab.fr oder @IP",
+        "Adresse MAC": "MAC-Adresse",
+        "Token d'API Violet": "API-Token Lila",
+        "Token": "Zeichen",
+        "Nom": "Name",
+        "Paramètres": "Einstellungen",
+        "Action": "Aktion"
+    },
+    "core\/ajax\/nabaztag.ajax.php": {
+        "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
+        "Veuillez saisir un message": "Bitte geben Sie eine Nachricht ein",
+        "Nabaztag non trouvé": "Nabaztag nicht gefunden",
+        "Commande non trouvée": "Bestellung nicht gefunden",
+        "Aucune méthode correspondante à : ": "Keine Methode entsprechend:"
+    },
+    "core\/class\/nabaztag.class.php": {
+        "L\\'adresse MAC ne peut etre vide": "MAC address cannot be empty",
+        "Le token ne peut etre vide": "Token cannot be empty",
+        "L\\'adresse ne peut etre vide": "The address cannot be empty",
+        "Redemarrer": "To restart",
+        "Coucher": "Sleep",
+        "Debout": "Standing",
+        "Parle": "Speak",
+        "Oreille gauche": "Left ear",
+        "Oreille droite": "Right ear",
+        "Qualité de l\\'air": "Air quality",
+        "Ephéméride": "Ephemeris",
+        "Horloge parlante": "Talking clock",
+        "Météo": "weather",
+        "Dicton": "saying",
+        "La requete ne peut etre vide": "The request cannot be empty"
+    }
+}
