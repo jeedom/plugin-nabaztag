@@ -204,23 +204,6 @@ class nabaztag extends eqLogic {
 		$proverbe->setEqLogic_id($this->getId());
 		$proverbe->save();
 	}
-
-	public function toHtml($_version = 'dashboard') {
-		$replace = $this->preToHtml($_version);
-		if (!is_array($replace)) {
-			return $replace;
-		}
-		$version = jeedom::versionAlias($_version);
-		foreach ($this->getCmd('action') as $cmd) {
-			if ($cmd->getIsVisible() == 1 && $cmd->getDisplay('showOn' . $_version, 1) == 1) {
-				$replace['#' . $cmd->getLogicalId() . '_id#'] = $cmd->getId();
-			} else {
-				$replace['#' . $cmd->getLogicalId() . '_id#'] = '';
-			}
-		}
-		return $this->postToHtml($_version, template_replace($replace, getTemplate('core', $version, 'nabaztag', 'nabaztag')));
-	}
-
 }
 
 class nabaztagCmd extends cmd {
@@ -259,7 +242,7 @@ class nabaztagCmd extends cmd {
 		log::add('nabaztag', 'debug', $request);
 		try {
 			$request = new com_http($request);
-			$result = $request->exec(0.1, 1);
+			$result = $request->exec(5, 1);
 			log::add('nabaztag', 'debug', print_r($result, true));
 			$xml = new SimpleXMLElement($result);
 			$json = json_decode(json_encode($xml), TRUE);
