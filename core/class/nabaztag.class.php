@@ -242,7 +242,7 @@ class nabaztagCmd extends cmd {
 		log::add('nabaztag', 'debug', $request);
 		try {
 			$request = new com_http($request);
-			$result = $request->exec(0.1, 1);
+			$result = $request->exec(5, 1);
 			log::add('nabaztag', 'debug', print_r($result, true));
 			$xml = new SimpleXMLElement($result);
 			$json = json_decode(json_encode($xml), TRUE);
