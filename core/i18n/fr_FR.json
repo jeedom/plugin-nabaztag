@@ -1,16 +1,12 @@
 {
-    "desktop\/modal\/micro.nabaztag.php": {
+    "plugins\/nabaztag\/desktop\/modal\/micro.nabaztag.php": {
         "Aucun equipement ne  correspond : Il faut (re)-enregistrer l\\'équipement ": "Aucun equipement ne  correspond : Il faut (re)-enregistrer l\\'équipement ",
         "L\\'id de l\\'équipement ne peut etre vide : ": "L\\'id de l\\'équipement ne peut etre vide : ",
         "Message...": "Message...",
         "Lire le message": "Lire le message",
         "Message lu avec succès": "Message lu avec succès"
     },
-    "desktop\/js\/nabaztag.js": {
-        "Afficher": "Afficher",
-        "Tester": "Tester"
-    },
-    "desktop\/php\/nabaztag.php": {
+    "plugins\/nabaztag\/desktop\/php\/nabaztag.php": {
         "401 - Accès non autorisé": "401 - Accès non autorisé",
         "Ajouter un équipement": "Ajouter un équipement",
         "Rechercher": "Rechercher",
@@ -36,14 +32,18 @@
         "Paramètres": "Paramètres",
         "Action": "Action"
     },
-    "core\/ajax\/nabaztag.ajax.php": {
+    "plugins\/nabaztag\/desktop\/js\/nabaztag.js": {
+        "Afficher": "Afficher",
+        "Tester": "Tester"
+    },
+    "plugins\/nabaztag\/core\/ajax\/nabaztag.ajax.php": {
         "401 - Accès non autorisé": "401 - Accès non autorisé",
         "Veuillez saisir un message": "Veuillez saisir un message",
         "Nabaztag non trouvé": "Nabaztag non trouvé",
         "Commande non trouvée": "Commande non trouvée",
         "Aucune méthode correspondante à : ": "Aucune méthode correspondante à : "
     },
-    "core\/class\/nabaztag.class.php": {
+    "plugins\/nabaztag\/core\/class\/nabaztag.class.php": {
         "L\\'adresse MAC ne peut etre vide": "L\\'adresse MAC ne peut etre vide",
         "Le token ne peut etre vide": "Le token ne peut etre vide",
         "L\\'adresse ne peut etre vide": "L\\'adresse ne peut etre vide",
