@@ -1,32 +1,28 @@
 {
-    "desktop\/modal\/micro.nabaztag.php": {
+    "plugins\/nabaztag\/desktop\/modal\/micro.nabaztag.php": {
         "Aucun equipement ne  correspond : Il faut (re)-enregistrer l\\'équipement ": "Keine Ausrüstungsübereinstimmungen: Sie müssen die Ausrüstung (neu) registrieren",
         "L\\'id de l\\'équipement ne peut etre vide : ": "Die Geräte-ID darf nicht leer sein:",
         "Message...": "Nachricht ...",
         "Lire le message": "Lesen Sie die Nachricht",
         "Message lu avec succès": "Nachricht erfolgreich gelesen"
     },
-    "desktop\/js\/nabaztag.js": {
-        "Afficher": "Anzeige",
-        "Tester": "Test"
-    },
-    "desktop\/php\/nabaztag.php": {
+    "plugins\/nabaztag\/desktop\/php\/nabaztag.php": {
         "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
         "Ajouter un équipement": "Ausrüstung hinzufügen",
-        "Rechercher": "Suche",
+        "Rechercher": "Suchen nach",
         "Mes Nabaztag": "Mein Nabaztag",
         "Vous n'avez pas encore de Nabaztag, cliquez sur Ajouter pour commencer": "Sie haben noch keinen Nabaztag. Klicken Sie zum Hinzufügen auf Hinzufügen",
-        "Sauvegarder": "speichern",
-        "Supprimer": "Entfernen",
+        "Sauvegarder": "Speichern",
+        "Supprimer": "Löschen",
         "Configuration avancée": "Erweiterte Konfiguration",
-        "Equipement": "Ausrüstung",
+        "Equipement": "Gerät",
         "Commandes": "Befehle",
         "Nom de l'équipement Nabaztag": "Name der Nabaztag-Ausrüstung",
         "Objet parent": "Übergeordnetes Objekt",
-        "Aucun": "keine",
+        "Aucun": "Ohne",
         "Catégorie": "Kategorie",
-        "Activer": "activate",
-        "Visible": "sichtbar",
+        "Activer": "Aktivieren",
+        "Visible": "Sichtbar",
         "Adresse (openjabnab.fr ou @IP)": "Adresse (openjabnab.fr oder @IP)",
         "openjabnab.fr ou @IP": "openjabnab.fr oder @IP",
         "Adresse MAC": "MAC-Adresse",
@@ -36,28 +32,32 @@
         "Paramètres": "Einstellungen",
         "Action": "Aktion"
     },
-    "core\/ajax\/nabaztag.ajax.php": {
+    "plugins\/nabaztag\/desktop\/js\/nabaztag.js": {
+        "Afficher": "Anzeige",
+        "Tester": "Test"
+    },
+    "plugins\/nabaztag\/core\/ajax\/nabaztag.ajax.php": {
         "401 - Accès non autorisé": "401 - Nicht autorisierter Zugriff",
         "Veuillez saisir un message": "Bitte geben Sie eine Nachricht ein",
         "Nabaztag non trouvé": "Nabaztag nicht gefunden",
         "Commande non trouvée": "Bestellung nicht gefunden",
         "Aucune méthode correspondante à : ": "Keine Methode entsprechend:"
     },
-    "core\/class\/nabaztag.class.php": {
-        "L\\'adresse MAC ne peut etre vide": "MAC address cannot be empty",
-        "Le token ne peut etre vide": "Token cannot be empty",
-        "L\\'adresse ne peut etre vide": "The address cannot be empty",
-        "Redemarrer": "To restart",
-        "Coucher": "Sleep",
-        "Debout": "Standing",
-        "Parle": "Speak",
-        "Oreille gauche": "Left ear",
-        "Oreille droite": "Right ear",
-        "Qualité de l\\'air": "Air quality",
-        "Ephéméride": "Ephemeris",
-        "Horloge parlante": "Talking clock",
-        "Météo": "weather",
-        "Dicton": "saying",
-        "La requete ne peut etre vide": "The request cannot be empty"
+    "plugins\/nabaztag\/core\/class\/nabaztag.class.php": {
+        "L\\'adresse MAC ne peut etre vide": "Die MAC-Adresse darf nicht leer sein",
+        "Le token ne peut etre vide": "Token darf nicht leer sein",
+        "L\\'adresse ne peut etre vide": "Die Adresse darf nicht leer sein",
+        "Redemarrer": "Neu starten",
+        "Coucher": "Schlafenszeit",
+        "Debout": "Stehend",
+        "Parle": "Sprich",
+        "Oreille gauche": "Linkes Ohr",
+        "Oreille droite": "Rechtes Ohr",
+        "Qualité de l\\'air": "Luftqualität",
+        "Ephéméride": "Ephemeride",
+        "Horloge parlante": "Sprechende Uhr",
+        "Météo": "Wetter",
+        "Dicton": "Sagen",
+        "La requete ne peut etre vide": "Die Anfrage darf nicht leer sein"
     }
 }
