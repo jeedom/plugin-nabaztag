@@ -227,7 +227,7 @@ class nabaztagCmd extends cmd {
 		$type = $this->getConfiguration('request');
 		switch ($this->subType) {
 			case 'message':
-				$parameters = urlencode(str_replace('#message#', $_options['message'], $parameters));
+				$parameters = urlencode(utf8_encode(str_replace('#message#', $_options['message'], $parameters)));
 				break;
 			case 'slider':
 				$parameters = str_replace('#slider#', $_options['slider'], $parameters);
