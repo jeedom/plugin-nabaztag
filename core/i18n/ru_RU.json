@@ -25,7 +25,7 @@
         "Visible": "Видимый",
         "Adresse (openjabnab.fr ou @IP)": "",
         "openjabnab.fr ou @IP": "",
-        "Adresse MAC": "",
+        "Adresse MAC": "MAC-адрес",
         "Token d'API Violet": "",
         "Token": "",
         "Nom": "Имя",

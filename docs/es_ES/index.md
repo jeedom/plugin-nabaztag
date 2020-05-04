@@ -15,7 +15,7 @@ Aquí encontrarás todos tus equipos Nabaztag :
 
 ![nabaztag2](../images/nabaztag2.png)
 
-> **Punta**
+> **Tip**
 >
 > Como en muchos lugares de Jeedom, coloca el mouse en el extremo izquierdo
 > abre un menú de acceso rápido (puedes
@@ -35,12 +35,12 @@ Aquí encontrarás toda la configuración de tu equipo :
 -   **Categoría** : categorías de equipos (puede pertenecer a
     categorías múltiples)
 
--   **Activar** : activa su equipo
+-   **Activer** : activa su equipo
 
 -   **Visible** : lo hace visible en el tablero
 
--   **Dirección (openjabnab.fr o @IP)** : openjabnab o dirección IP (DNS)
-    su openjabnab si lo autohospeda
+-   **Dirección (openjabnab.fr o @IP)** : Openjabnab o dirección IP (DNS)
+    su Openjabnab si lo autohospeda
 
 -   **Dirección MAC** : la dirección mac de tu conejo (ver más abajo)
 
@@ -60,11 +60,11 @@ A continuación encontrará la lista de pedidos. :
 
 La lista de comandos es la siguiente :
 
--   **De pie** : Despierta el conejo
+-   **Debout** : Despierta el conejo
 
--   **Reiniciar** : Reinicia el conejo
+-   **Redemarrer** : Reinicia el conejo
 
--   **Hora de acostarse** : Vamos a decirle al conejo que se vaya a la cama
+-   **Coucher** : Vamos a decirle al conejo que se vaya a la cama
 
 -   **Calidad del aire** : Da calidad del aire (requiere
     activación del complemento correspondiente en openjabnab)
@@ -78,7 +78,7 @@ La lista de comandos es la siguiente :
 -   **Tiempo** : Da tiempo (requiere la activación del complemento
     corresponsal en openjabnab)
 
--   **Diciendo** : Dar un dicho (requiere la activación del complemento
+-   **Dicton** : Dar un dicho (requiere la activación del complemento
     corresponsal en openjabnab)
 
 -   **Oreja izquierda** : Le permite elegir la posición del oído.
@@ -87,12 +87,12 @@ La lista de comandos es la siguiente :
 -   **Oreja derecha** : Le permite elegir la posición del oído.
     derecha (16 posiciones posibles)
 
--   **Hablar** : Digamos una oración al conejo
+-   **Parle** : Digamos una oración al conejo
 
 Recuperar dirección máxima y token 
 ===================================
 
-Vaya al sitio web [openjabnab] (http://openjabnab.fr/ojn_admin/index.php)
+Ir al sitio [Openjabnab](http://openjabnab.fr/ojn_admin/index.php)
 luego inicie sesión en su cuenta :
 
 ![nabaztag4](../images/nabaztag4.png)

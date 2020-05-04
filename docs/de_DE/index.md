@@ -15,7 +15,7 @@ Hier finden Sie alle Ihre Nabaztag-Geräte :
 
 ![nabaztag2](../images/nabaztag2.png)
 
-> **Spitze**
+> **Tip**
 >
 > Platzieren Sie wie an vielen Stellen in Jeedom die Maus ganz links
 > ruft ein Schnellzugriffsmenü auf (Sie können
@@ -35,9 +35,9 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 -   **Kategorie** : Gerätekategorien (es kann gehören
     mehrere Kategorien)
 
--   **Aktivieren** : macht Ihre Ausrüstung aktiv
+-   **Activer** : macht Ihre Ausrüstung aktiv
 
--   **Sichtbar** : macht es auf dem Dashboard sichtbar
+-   **Visible** : macht es auf dem Dashboard sichtbar
 
 -   **Adresse (openjabnab.fr oder @IP)** : Openjabnab oder IP-Adresse (DNS)
     Ihr Openjabnab, wenn Sie es selbst hosten
@@ -60,11 +60,11 @@ Nachfolgend finden Sie die Liste der Bestellungen :
 
 Die Liste der Befehle lautet wie folgt :
 
--   **Stehend** : Weckt das Kaninchen auf
+-   **Debout** : Weckt das Kaninchen auf
 
--   **Neu starten** : Starten Sie das Kaninchen neu
+-   **Redemarrer** : Starten Sie das Kaninchen neu
 
--   **Schlafenszeit** : Sagen wir dem Kaninchen, er soll ins Bett gehen
+-   **Coucher** : Sagen wir dem Kaninchen, er soll ins Bett gehen
 
 -   **Luftqualität** : Gibt Luftqualität (erfordert
     Aktivierung des entsprechenden Plugins in openjabnab)
@@ -78,7 +78,7 @@ Die Liste der Befehle lautet wie folgt :
 -   **Wetter** : Gibt Wetter (erfordert Plugin-Aktivierung
     Korrespondent in openjabnab)
 
--   **Sagen** : Geben Sie ein Sprichwort (erfordert Plugin-Aktivierung
+-   **Dicton** : Geben Sie ein Sprichwort (erfordert Plugin-Aktivierung
     Korrespondent in openjabnab)
 
 -   **Linkes Ohr** : Hier können Sie die Position des Ohrs auswählen
@@ -87,12 +87,12 @@ Die Liste der Befehle lautet wie folgt :
 -   **Rechtes Ohr** : Hier können Sie die Position des Ohrs auswählen
     rechts (16 Positionen möglich)
 
--   **Sprich** : Sagen wir dem Kaninchen einen Satz
+-   **Parle** : Sagen wir dem Kaninchen einen Satz
 
 Maximale Adresse und Token abrufen 
 ===================================
 
-Gehen Sie zur Website [openjabnab] (http://openjabnab.fr/ojn_admin/index.php)
+Gehen Sie zur Website [openjabnab](http://openjabnab.fr/ojn_admin/index.php)
 Melden Sie sich dann in Ihrem Konto an :
 
 ![nabaztag4](../images/nabaztag4.png)

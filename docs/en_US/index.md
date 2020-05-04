@@ -35,7 +35,7 @@ Here you find all the configuration of your equipment :
 -   **Category** : equipment categories (it may belong to
     multiple categories)
 
--   **Activate** : makes your equipment active
+-   **Activer** : makes your equipment active
 
 -   **Visible** : makes it visible on the dashboard
 
@@ -60,11 +60,11 @@ Below you find the list of orders :
 
 The list of commands is as follows :
 
--   **Standing** : Wakes up the rabbit
+-   **Debout** : Wakes up the rabbit
 
--   **Restart** : Restart the rabbit
+-   **Redemarrer** : Restart the rabbit
 
--   **Sleep** : Lets tell the rabbit to go to bed
+-   **Coucher** : Lets tell the rabbit to go to bed
 
 -   **Air quality** : Gives air quality (requires
     activation of the corresponding plugin in openjabnab)
@@ -78,7 +78,7 @@ The list of commands is as follows :
 -   **Weather** : Gives weather (requires plugin activation
     correspondent in openjabnab)
 
--   **Saying** : Give a saying (requires plugin activation
+-   **Dicton** : Give a saying (requires plugin activation
     correspondent in openjabnab)
 
 -   **Left ear** : Allows you to choose the position of the ear
@@ -87,12 +87,12 @@ The list of commands is as follows :
 -   **Right ear** : Allows you to choose the position of the ear
     right (16 positions possible)
 
--   **Speak** : Lets say a sentence to the rabbit
+-   **Parle** : Lets say a sentence to the rabbit
 
 Retrieve max address and token 
 ===================================
 
-Go to the website [openjabnab] (http://openjabnab.fr/ojn_admin/index.php)
+Go to the site [openjabnab](http://openjabnab.fr/ojn_admin/index.php)
 then log into your account :
 
 ![nabaztag4](../images/nabaztag4.png)
