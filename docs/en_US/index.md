@@ -35,7 +35,7 @@ Here you find all the configuration of your equipment :
 -   **Category** : equipment categories (it may belong to
     multiple categories)
 
--   **Activer** : makes your equipment active
+-   **Activate** : makes your equipment active
 
 -   **Visible** : makes it visible on the dashboard
 
@@ -60,11 +60,11 @@ Below you find the list of orders :
 
 The list of commands is as follows :
 
--   **Debout** : Wakes up the rabbit
+-   **Standing** : Wakes up the rabbit
 
--   **Redemarrer** : Restart the rabbit
+-   **Restart** : Restart the rabbit
 
--   **Coucher** : Lets tell the rabbit to go to bed
+-   **Sleep** : Lets tell the rabbit to go to bed
 
 -   **Air quality** : Gives air quality (requires
     activation of the corresponding plugin in openjabnab)
@@ -78,7 +78,7 @@ The list of commands is as follows :
 -   **Weather** : Gives weather (requires plugin activation
     correspondent in openjabnab)
 
--   **Dicton** : Give a saying (requires plugin activation
+-   **Saying** : Give a saying (requires plugin activation
     correspondent in openjabnab)
 
 -   **Left ear** : Allows you to choose the position of the ear
@@ -87,7 +87,7 @@ The list of commands is as follows :
 -   **Right ear** : Allows you to choose the position of the ear
     right (16 positions possible)
 
--   **Parle** : Lets say a sentence to the rabbit
+-   **Speak** : Lets say a sentence to the rabbit
 
 Retrieve max address and token 
 ===================================

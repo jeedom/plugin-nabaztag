@@ -41,7 +41,7 @@
         "Veuillez saisir un message": "",
         "Nabaztag non trouvé": "",
         "Commande non trouvée": "Perintah tidak ditemukan",
-        "Aucune méthode correspondante à : ": "Aucune methode correspondante à : "
+        "Aucune méthode correspondante à : ": "Aucune methode correspondante à :"
     },
     "plugins\/nabaztag\/core\/class\/nabaztag.class.php": {
         "L\\'adresse MAC ne peut etre vide": "",

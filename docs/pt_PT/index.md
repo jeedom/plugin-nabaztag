@@ -15,7 +15,7 @@ Aqui você encontra todo o seu equipamento Nabaztag :
 
 ![nabaztag2](../images/nabaztag2.png)
 
-> **Tip**
+> **Dica**
 >
 > Como em muitos lugares em Jeedom, coloque o mouse na extremidade esquerda
 > abre um menu de acesso rápido (você pode
@@ -35,9 +35,9 @@ Aqui você encontra toda a configuração do seu equipamento :
 -   **Categoria** : categorias de equipamentos (pode pertencer a
     várias categorias)
 
--   **Activer** : torna seu equipamento ativo
+-   **Ativar** : torna seu equipamento ativo
 
--   **Visible** : torna visível no painel
+-   **Visivél** : torna visível no painel
 
 -   **Endereço (openjabnab.fr ou @IP)** : openjabnab ou endereço IP (DNS)
     seu openjabnab se você o hospedar
@@ -60,11 +60,11 @@ Abaixo você encontra a lista de pedidos :
 
 A lista de comandos é a seguinte :
 
--   **Debout** : Acorde o coelho
+-   **Em pé** : Acorde o coelho
 
--   **Redemarrer** : Reinicie o coelho
+-   **Restart** : Reinicie o coelho
 
--   **Coucher** : Vamos dizer ao coelho para ir para a cama
+-   **Hora de dormir** : Vamos dizer ao coelho para ir para a cama
 
 -   **Qualidade do ar** : Dá qualidade do ar (requer
     ativação do plugin correspondente em openjabnab)
@@ -78,7 +78,7 @@ A lista de comandos é a seguinte :
 -   **Previsão do tempo** : Dá tempo (requer ativação de plug-in)
     correspondente em openjabnab)
 
--   **Dicton** : Dê um ditado (requer ativação do plugin
+-   **Dizendo** : Dê um ditado (requer ativação do plugin
     correspondente em openjabnab)
 
 -   **Orelha esquerda** : Permite escolher a posição do ouvido
@@ -87,7 +87,7 @@ A lista de comandos é a seguinte :
 -   **Orelha direita** : Permite escolher a posição do ouvido
     direita (16 posições possíveis)
 
--   **Parle** : Vamos dizer uma frase para o coelho
+-   **Fala** : Vamos dizer uma frase para o coelho
 
 Recuperar endereço máximo e token 
 ===================================

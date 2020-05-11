@@ -41,7 +41,7 @@
         "Veuillez saisir un message": "Por favor insira uma mensagem",
         "Nabaztag non trouvé": "Nabaztag não encontrado",
         "Commande non trouvée": "Comando não encontrado",
-        "Aucune méthode correspondante à : ": "Aucune methode correspondante à : "
+        "Aucune méthode correspondante à : ": "Aucune methode correspondante à :"
     },
     "plugins\/nabaztag\/core\/class\/nabaztag.class.php": {
         "L\\'adresse MAC ne peut etre vide": "O endereço MAC não pode estar vazio",

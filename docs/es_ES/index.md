@@ -15,7 +15,7 @@ Aquí encontrarás todos tus equipos Nabaztag :
 
 ![nabaztag2](../images/nabaztag2.png)
 
-> **Tip**
+> **Punta**
 >
 > Como en muchos lugares de Jeedom, coloca el mouse en el extremo izquierdo
 > abre un menú de acceso rápido (puedes
@@ -27,7 +27,7 @@ Una vez que se selecciona un equipo, obtienes :
 
 Aquí encontrarás toda la configuración de tu equipo :
 
--   **Nombre del equipo Nabaztag.** : nombre de su equipo Nabaztag
+-   **Nombre del equipo Nabaztag** : nombre de su equipo Nabaztag
 
 -   **Objeto padre** : indica el objeto padre al que pertenece
     equipo
@@ -35,18 +35,18 @@ Aquí encontrarás toda la configuración de tu equipo :
 -   **Categoría** : categorías de equipos (puede pertenecer a
     categorías múltiples)
 
--   **Activer** : activa su equipo
+-   **Activar** : activa su equipo
 
 -   **Visible** : lo hace visible en el tablero
 
--   **Dirección (openjabnab.fr o @IP)** : Openjabnab o dirección IP (DNS)
-    su Openjabnab si lo autohospeda
+-   **Dirección (openjabnab.fr o @IP)** : openjabnab o dirección IP (DNS)
+    su openjabnab si lo autohospeda
 
 -   **Dirección MAC** : la dirección mac de tu conejo (ver más abajo)
 
 -   **API Token Purple** : Token API (ver más abajo)
 
-A continuación encontrará la lista de pedidos. :
+A continuación encontrará la lista de pedidos :
 
 -   el nombre que se muestra en el tablero
 
@@ -60,11 +60,11 @@ A continuación encontrará la lista de pedidos. :
 
 La lista de comandos es la siguiente :
 
--   **Debout** : Despierta el conejo
+-   **De pie** : Despierta el conejo
 
--   **Redemarrer** : Reinicia el conejo
+-   **Reiniciar** : Reinicia el conejo
 
--   **Coucher** : Vamos a decirle al conejo que se vaya a la cama
+-   **Hora de acostarse** : Vamos a decirle al conejo que se vaya a la cama
 
 -   **Calidad del aire** : Da calidad del aire (requiere
     activación del complemento correspondiente en openjabnab)
@@ -78,16 +78,16 @@ La lista de comandos es la siguiente :
 -   **Tiempo** : Da tiempo (requiere la activación del complemento
     corresponsal en openjabnab)
 
--   **Dicton** : Dar un dicho (requiere la activación del complemento
+-   **Diciendo** : Dar un dicho (requiere la activación del complemento
     corresponsal en openjabnab)
 
--   **Oreja izquierda** : Le permite elegir la posición del oído.
+-   **Oreja izquierda** : Le permite elegir la posición del oído
     izquierda (16 posiciones posibles)
 
--   **Oreja derecha** : Le permite elegir la posición del oído.
+-   **Oreja derecha** : Le permite elegir la posición del oído
     derecha (16 posiciones posibles)
 
--   **Parle** : Digamos una oración al conejo
+-   **Hablar** : Digamos una oración al conejo
 
 Recuperar dirección máxima y token 
 ===================================
@@ -112,7 +112,7 @@ en Jeedom
 Reproductor 
 ======
 
-Aquí está el widget obtenido después de la creación del equipo. :
+Aquí está el widget obtenido después de la creación del equipo :
 
 ![nabaztag7](../images/nabaztag7.png)
 
