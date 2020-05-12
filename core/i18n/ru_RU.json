@@ -25,7 +25,7 @@
         "Visible": "Видимый",
         "Adresse (openjabnab.fr ou @IP)": "",
         "openjabnab.fr ou @IP": "",
-        "Adresse MAC": "",
+        "Adresse MAC": "MAC-адрес",
         "Token d'API Violet": "",
         "Token": "",
         "Nom": "Имя",
@@ -41,7 +41,7 @@
         "Veuillez saisir un message": "",
         "Nabaztag non trouvé": "",
         "Commande non trouvée": "Команда не найдена",
-        "Aucune méthode correspondante à : ": "Aucune methode correspondante à : "
+        "Aucune méthode correspondante à : ": "Aucune methode correspondante à :"
     },
     "plugins\/nabaztag\/core\/class\/nabaztag.class.php": {
         "L\\'adresse MAC ne peut etre vide": "",
@@ -50,7 +50,7 @@
         "Redemarrer": "Перезагрузить",
         "Coucher": "",
         "Debout": "",
-        "Parle": "",
+        "Parle": "говорит",
         "Oreille gauche": "",
         "Oreille droite": "",
         "Qualité de l\\'air": "",

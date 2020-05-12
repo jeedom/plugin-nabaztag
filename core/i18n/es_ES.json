@@ -17,7 +17,7 @@
         "Configuration avancée": "Configuración avanzada",
         "Equipement": "Dispositivos",
         "Commandes": "Comandos",
-        "Nom de l'équipement Nabaztag": "Nombre del equipo Nabaztag.",
+        "Nom de l'équipement Nabaztag": "Nombre del equipo Nabaztag",
         "Objet parent": "Objeto padre",
         "Aucun": "Ninguna",
         "Catégorie": "Categoría",
@@ -46,7 +46,7 @@
     "plugins\/nabaztag\/core\/class\/nabaztag.class.php": {
         "L\\'adresse MAC ne peut etre vide": "La dirección MAC no puede estar vacía",
         "Le token ne peut etre vide": "El token no puede estar vacío",
-        "L\\'adresse ne peut etre vide": "La dirección no puede estar vacía.",
+        "L\\'adresse ne peut etre vide": "La dirección no puede estar vacía",
         "Redemarrer": "Reiniciar",
         "Coucher": "Hora de acostarse",
         "Debout": "De pie",
@@ -58,6 +58,6 @@
         "Horloge parlante": "Reloj parlante",
         "Météo": "Tiempo",
         "Dicton": "Diciendo",
-        "La requete ne peut etre vide": "La solicitud no puede estar vacía."
+        "La requete ne peut etre vide": "La solicitud no puede estar vacía"
     }
 }
