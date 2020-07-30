@@ -1,13 +1,33 @@
 {
     "id": "nabaztag",
     "name": "Nabaztag",
-    "description": "Plugin pour commander le Nabaztag",
+    "description": {
+        "fr_FR": "Plugin pour commander le Nabaztag",
+        "en_US": "Plugin to order the Nabaztag",
+        "es_ES": "Plugin para ordenar el Nabaztag",
+        "de_DE": "Plugin um den Nabaztag zu bestellen",
+        "pt_PT": "Plug-in para solicitar o Nabaztag"
+    },
     "licence": "AGPL",
     "author": "Loïc",
     "require": "2.3",
     "category": "devicecommunication",
     "changelog": "https:\/\/doc.jeedom.com\/#language#\/plugins\/devicecommunication\/nabaztag\/changelog",
     "documentation": "https:\/\/doc.jeedom.com\/#language#\/plugins\/devicecommunication\/nabaztag\/",
-    "language" : ["fr_FR","en_US","de_DE","sp_SP"],
-"compatibility" : ["miniplus","smart","rpi","docker","diy","mobile","v4"]
+    "language": [
+        "fr_FR",
+        "en_US",
+        "es_ES",
+        "de_DE",
+        "pt_PT"
+    ],
+    "compatibility": [
+        "miniplus",
+        "smart",
+        "rpi",
+        "docker",
+        "diy",
+        "mobile",
+        "v4"
+    ]
 }

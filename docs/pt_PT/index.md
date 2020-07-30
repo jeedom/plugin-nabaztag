@@ -24,14 +24,14 @@ Aqui você encontra toda a configuração do seu equipamento :
 -   **Ativar** : torna seu equipamento ativo
 -   **Visivél** : torna visível no painel
 -   **Endereço (openjabnab.fr ou @IP)** : openjabnab ou endereço IP (DNS) do seu openjabnab se você o hospedar
--   **Mac Address** : o endereço mac do seu coelho (veja abaixo)
--   **Roxo do token da API** : Token de API (veja abaixo)
+-   **Mac Address** : endereço mac do seu coelho (veja abaixo)
+-   **Roxo do token da API** : Token da API (veja abaixo)
 
 Abaixo você encontra a lista de pedidos :
 
 -   o nome exibido no painel
 -   Display : permite exibir os dados no painel
--   configuração avançada (pequenas rodas dentadas) : exibe a configuração avançada do comando (método de registro, widget etc.)
+-   Configuração avançada (pequenas rodas dentadas) : usado para exibir a configuração avançada do comando (método de log, widget, etc)
 -   Teste : permite testar o comando
 
 A lista de comandos é a seguinte :
@@ -39,11 +39,11 @@ A lista de comandos é a seguinte :
 -   **Em pé** : Acorde o coelho
 -   **Restart** : Reinicie o coelho
 -   **Hora de dormir** : Vamos dizer ao coelho para ir para a cama
--   **Qualidade do ar** : Dá qualidade do ar (requer a ativação do plug-in correspondente no openjabnab)
--   **Efemérides** : Dar efemérides (requer a ativação do plug-in correspondente no openjabnab)
--   **Relógio falante** : Indique o tempo (requer a ativação do plugin correspondente no openjabnab)
+-   **Qualidade do ar** : Dá a qualidade do ar (requer a ativação do plug-in correspondente no openjabnab)
+-   **Efemérides** : Dá efemérides (requer a ativação do plug-in correspondente no openjabnab)
+-   **Relógio falante** : Dá tempo (requer a ativação do plugin correspondente no openjabnab)
 -   **Previsão do tempo** : Dá o tempo (requer a ativação do plugin correspondente no openjabnab)
--   **Dizendo** : Dê um ditado (requer a ativação do plugin correspondente no openjabnab)
+-   **Dizendo** : Dá um provérbio (requer a ativação do plugin correspondente no openjabnab)
 -   **Orelha esquerda** : Permite escolher a posição da orelha esquerda (16 posições possíveis)
 -   **Orelha direita** : Permite escolher a posição da orelha direita (16 posições possíveis)
 -   **Fala** : Vamos dizer uma frase para o coelho

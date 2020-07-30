@@ -59,5 +59,8 @@
         "Météo": "Previsão do tempo",
         "Dicton": "Dizendo",
         "La requete ne peut etre vide": "A solicitação não pode estar vazia"
+    },
+    "info.json": {
+        "Plugin pour commander le Nabaztag": "Plug-in para solicitar o Nabaztag"
     }
 }

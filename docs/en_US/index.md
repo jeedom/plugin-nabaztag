@@ -24,14 +24,14 @@ Here you find all the configuration of your equipment :
 -   **Activate** : makes your equipment active
 -   **Visible** : makes it visible on the dashboard
 -   **Address (openjabnab.fr or @IP)** : openjabnab or IP (DNS) address of your openjabnab if you self-host it
--   **MAC address** : your rabbit's mac address (see below)
+-   **MAC address** : mac address of your rabbit (see below)
 -   **API Token Purple** : API token (see below)
 
 Below you find the list of orders :
 
 -   the name displayed on the dashboard
 -   Pin up : allows to display the data on the dashboard
--   advanced configuration (small notched wheels) : displays the advanced configuration of the command (logging method, widget, etc.)
+-   Advanced configuration (small notched wheels) : used to display the advanced configuration of the command (logging method, widget, etc)
 -   Test : Used to test the command
 
 The list of commands is as follows :
@@ -39,12 +39,12 @@ The list of commands is as follows :
 -   **Standing** : Wakes up the rabbit
 -   **Restart** : Restart the rabbit
 -   **Sleep** : Lets tell the rabbit to go to bed
--   **Air quality** : Gives air quality (requires activation of the corresponding plugin in openjabnab)
--   **Ephemeris** : Give ephemeris (requires activation of the corresponding plugin in openjabnab)
--   **Talking clock** : Give the time (requires activation of the corresponding plugin in openjabnab)
--   **Weather** : Gives the weather (requires activation of the corresponding plugin in openjabnab)
--   **Saying** : Give a saying (requires activation of the corresponding plugin in openjabnab)
--   **Left ear** : Allows you to choose the position of the left ear (16 positions possible)
+-   **Air quality** : Gives the air quality (requires the activation of the corresponding plugin in openjabnab)
+-   **Ephemeris** : Gives ephemeris (requires the activation of the corresponding plugin in openjabnab)
+-   **Talking clock** : Gives the time (requires the activation of the corresponding plugin in openjabnab)
+-   **Weather** : Gives the weather (requires the activation of the corresponding plugin in openjabnab)
+-   **Saying** : Gives a saying (requires the activation of the corresponding plugin in openjabnab)
+-   **Left ear** : Allows you to choose the position of the left ear (16 possible positions)
 -   **Right ear** : Allows you to choose the position of the right ear (16 possible positions)
 -   **Speak** : Lets say a sentence to the rabbit
 

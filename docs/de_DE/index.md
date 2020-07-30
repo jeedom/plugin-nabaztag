@@ -24,14 +24,14 @@ Hier finden Sie die gesamte Konfiguration Ihrer Geräte :
 -   **Aktivieren** : macht Ihre Ausrüstung aktiv
 -   **Sichtbar** : macht es auf dem Dashboard sichtbar
 -   **Adresse (openjabnab.fr oder @IP)** : openjabnab oder IP (DNS) -Adresse Ihres openjabnab, wenn Sie es selbst hosten
--   **MAC-Adresse** : Mac-Adresse Ihres Kaninchens (siehe unten)
+-   **MAC-Adresse** : Mac-Adresse Ihres Kaninchens (siehe unten))
 -   **API-Token Lila** : API-Token (siehe unten)
 
 Nachfolgend finden Sie die Liste der Bestellungen :
 
 -   Der im Dashboard angezeigte Name
 -   Anzeige : ermöglicht die Anzeige der Daten im Dashboard
--   erweiterte Konfiguration (kleine gekerbte Räder) : Zeigt die erweiterte Konfiguration des Befehls an (Protokollierungsmethode, Widget usw.)
+-   Erweiterte Konfiguration (kleine gekerbte Räder) : Dient zum Anzeigen der erweiterten Konfiguration des Befehls (Protokollierungsmethode, Widget usw.))
 -   Test : Wird zum Testen des Befehls verwendet
 
 Die Liste der Befehle lautet wie folgt :
@@ -39,13 +39,13 @@ Die Liste der Befehle lautet wie folgt :
 -   **Stehend** : Weckt das Kaninchen auf
 -   **Neu starten** : Starten Sie das Kaninchen neu
 -   **Schlafenszeit** : Sagen wir dem Kaninchen, er soll ins Bett gehen
--   **Luftqualität** : Gibt Luftqualität (erfordert die Aktivierung des entsprechenden Plugins in openjabnab)
--   **Ephemeride** : Geben Sie Ephemeride (erfordert die Aktivierung des entsprechenden Plugins in Openjabnab)
--   **Sprechende Uhr** : Geben Sie die Zeit an (erfordert die Aktivierung des entsprechenden Plugins in openjabnab)
+-   **Luftqualität** : Gibt die Luftqualität an (erfordert die Aktivierung des entsprechenden Plugins in openjabnab)
+-   **Ephemeride** : Gibt Ephemeride (erfordert die Aktivierung des entsprechenden Plugins in openjabnab)
+-   **Sprechende Uhr** : Gibt die Zeit an (erfordert die Aktivierung des entsprechenden Plugins in openjabnab)
 -   **Wetter** : Gibt das Wetter an (erfordert die Aktivierung des entsprechenden Plugins in openjabnab)
--   **Sagen** : Geben Sie ein Sprichwort (erfordert die Aktivierung des entsprechenden Plugins in openjabnab)
--   **Linkes Ohr** : Ermöglicht die Auswahl der Position des linken Ohrs (16 Positionen möglich)
--   **Rechtes Ohr** : Ermöglicht die Auswahl der Position des rechten Ohrs (16 mögliche Positionen)
+-   **Sagen** : Gibt ein Sprichwort (erfordert die Aktivierung des entsprechenden Plugins in openjabnab)
+-   **Linkes Ohr** : Hier können Sie die Position des linken Ohrs auswählen (16 mögliche Positionen)
+-   **Rechtes Ohr** : Hier können Sie die Position des rechten Ohrs auswählen (16 mögliche Positionen)
 -   **Sprich** : Sagen wir dem Kaninchen einen Satz
 
 # Maximale Adresse und Token abrufen 

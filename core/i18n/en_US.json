@@ -59,5 +59,8 @@
         "Météo": "Weather",
         "Dicton": "Saying",
         "La requete ne peut etre vide": "The request cannot be empty"
+    },
+    "info.json": {
+        "Plugin pour commander le Nabaztag": "Plugin to order the Nabaztag"
     }
 }
